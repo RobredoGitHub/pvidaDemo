@@ -204,9 +204,9 @@ function Form() {
         <div className='document'>
                 <header className='Header'>
                     <h1>
-                Herramienta para la medición y adaptación de la vivienda en
-                interiores
-                    </h1>
+                 APP VIDA
+                    </h1><span>®</span>
+                    
                 </header>
             
             {/* <h2>Suelos</h2>

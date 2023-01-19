@@ -1,4 +1,6 @@
 .Header{
+    display: flex;
+    justify-content: center;
     margin-top: 5rem;
     margin-bottom: 5rem;
     margin-left: auto;
@@ -12,8 +14,11 @@
     margin-right: auto;
     width: 90%;
 }
+header > span{
+    margin-top: 2rem;
+}
 h1 {
-    font-size: 60px;
+    font-size: 80px;
     text-align: center;
     color: rgb(29, 18, 0);
 }
