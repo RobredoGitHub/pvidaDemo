@@ -1,44 +1,60 @@
 .Header{
     display: flex;
     justify-content: center;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 2.2rem;
+    margin-bottom: 2.2rem;
     margin-left: auto;
     margin-right: auto;
     width: 75%;
 }
+.Header img{
+    width: 27rem;
+}
+span{
+    width: 10px;
+}
 .document{
     padding-top: 1rem;
-
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    width: 85%;
 }
-header > span{
-    margin-top: 2rem;
+
+.img{
+    margin-top: 1.5rem;
+    text-align: left;
+    border: 3px solid #00ACC8;
+}
+img{
+    border-radius: 5%;
+    
 }
 h1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     font-size: 80px;
     text-align: center;
-    color: rgb(29, 18, 0);
+    color: #00305E;
 }
+
 h2 {
-    color: rgb(57, 36, 1);
+    color: #00305E;
     font-size: 50px;
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 5rem;
+    margin-bottom: 7rem;
 }
 h3 {
     margin-top: 5px;
     margin-bottom: 5px;
 }
 fieldset {
-    background-color: rgb(240, 239, 239);
+    background-color: #b9b3ab;
     width: 85%;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
-    border-color: rgb(93, 68, 2);
+    border-color: #00ACC8;
     border: 9px groove (internal value);
     border-radius: 7px;
 }
@@ -46,15 +62,19 @@ legend {
 
     font-weight: bold;
 }
-label{
+/* label{
 
     margin-top: 6px;
     margin-bottom: 6px;
-}
+} */
+
 
 p {
     margin-top: 18px;
     margin-bottom: 18px;
+}
+.img{
+    margin-left: 15px;
 }
 input[type="number"] {
     margin-left: 2rem;
@@ -63,26 +83,26 @@ input {
     height: 1.2rem;
     width: 8rem;
     border-radius: 3px;
-    margin-top: 2px;
+    margin-top: 10px;
     margin-bottom: 2px;
     margin-left: 5px;
     margin-right: 5px;
 }
+.img{
+    width: 35rem;
+}
 .submitDiv{
-    margin-top: 2rem;
+    margin-top: 5rem;
     margin-bottom: 3rem;
     text-align: center;
 }
 .submitDiv button{
     color: black;
-    border-radius: 10%;
-    background-color: rgb(198, 234, 222);
     width: 10rem;
     height: 2rem;
 }
 .submitDiv button:hover{
     cursor: pointer;
-    background-color: aquamarine;
+    background-color: #00ACC8;
         
         }
-        

@@ -1,0 +1,20 @@
+body{
+    background-color:rgb(235, 229, 229);
+
+  font-size: 22px;
+  margin: 0;
+  font-family: Arial, sans-serif;
+
+} 
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+    color: #00305E ;
+}
+.modal1{
+
+    margin: 17rem auto auto auto;
+    width: 35rem;
+}
