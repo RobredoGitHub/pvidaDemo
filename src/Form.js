@@ -1,6 +1,6 @@
 import './Form.css';
 import { useState } from 'react';
-// import Modal from './Modal';
+
 
 
 // function OpenModal(){
@@ -471,7 +471,7 @@ function Form() {
                         alert('su casa se encuentra adaptada en un 20%');
                     }} */
                 >
-                    Submit
+                    Calcular
                 </button>
             </div>
         </div>    

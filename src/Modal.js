@@ -1,52 +1,21 @@
+import React from "react";
+import "./modal.css";
+import { useNavigate } from "react-router-dom";
 
-import { Component } from "react";
-import Portal from "./Portal";
-
-
-export default class Modal extends Component {
-    render(){
-        const {children, toggle, active} = this.props
-
-
-        return (
-            <Portal>
-                {active && (
-                    <div style={styles.wrapper}>
-                        <div style={styles.window}>
-                            <button style={styles.closeBtn} onClick={toggle}>X</button>
-                            <div>{children}</div>
-                        </div>
-                    </div>
-                )}
-            </Portal>
-        )
-    }
+function Modal() {
+    const navigate = useNavigate();
+    return  <div className="modal1">
+    <div>
+        <h3>Qué es </h3>
+        <h2>VIDAPP </h2>
+        <p>
+            Esta herramineta sirve al usuario como herramienta de comprobación de 
+            los parametros de accesibilidad de su vivienda. Es decir, ¿en qué medida 
+            se encuentra adaptado el hogar para que personas mayores o con discapacidad lo habiten de forma cómoda?
+        </p>
+        <div onClick={() => navigate("../formulario")} className="btn"><button>Aceptar</button></div>
+    </div>
+</div>
 }
 
-const styles = {
-
-    wrapper: {
-        position: "absolute" ,
-        top: 0 ,
-        left: 0,
-        width: "100%",
-        height: "100%",
-        display: "flex",
-        justifyContent: "center",
-        AlignItems: "center",
-    },
-    window: {
-        position: "relative",
-        background: "#fff",
-        borderRadius: 5,
-        padding: 15,
-        boxShadow: "2px 2px 10px rgba(0,0,0,0.3)",
-        zIndex: 10,
-        minWidth: 320
-    },
-    closeBtn: {
-        position:"absolute",
-        top: 0,
-        right: 0,
-    }
-}
+export default Modal;

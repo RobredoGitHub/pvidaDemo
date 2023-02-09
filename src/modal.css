@@ -1,6 +1,6 @@
 body{
-    background-color:rgb(235, 229, 229);
-
+  background-color:rgb(235, 229, 229);
+  height: 100vh;
   font-size: 22px;
   margin: 0;
   font-family: Arial, sans-serif;
@@ -8,7 +8,12 @@ body{
 } 
 h2{
     text-align: center;
+    color:#00305E;
+    font-size: 50px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
+
 h3{
     text-align: center;
     color: #00305E ;
@@ -17,4 +22,7 @@ h3{
 
     margin: 17rem auto auto auto;
     width: 35rem;
+}
+.btn{
+    text-align: center;
 }

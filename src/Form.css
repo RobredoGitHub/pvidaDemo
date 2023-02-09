@@ -7,6 +7,15 @@
     margin-right: auto;
     width: 75%;
 }
+.Header{
+    display: inherit;
+    justify-content: inherit;
+    margin-top: inherit;
+    margin-bottom: inherit;
+    margin-left: inherit;
+    margin-right: inherit;
+    width: 75%;
+}
 .Header img{
     width: 27rem;
 }
