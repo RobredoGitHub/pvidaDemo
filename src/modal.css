@@ -1,17 +1,38 @@
-body{
-  background-color:rgb(235, 229, 229);
-  height: 100vh;
-  font-size: 22px;
-  margin: 0;
-  font-family: Arial, sans-serif;
-
-} 
-h2{
-    text-align: center;
-    color:#00305E;
-    font-size: 50px;
-    margin-top: 2rem;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK&family=Source+Sans+Pro:wght@400;600&display=swap');
+.modal {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgba(0, 51, 14, 0.8); /* Black w/ opacity */
+  }
+  
+  body{
+    font-size: 22px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  
+  } 
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 40rem;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  h2{
+    margin-top: 1rem;
     margin-bottom: 2rem;
+    text-align: center;
+    color:#087021;
+    font-size: 50px;
 }
 
 h3{
@@ -19,10 +40,36 @@ h3{
     color: #00305E ;
 }
 .modal1{
-
-    margin: 17rem auto auto auto;
-    width: 35rem;
+    padding: 4rem ;
 }
-.btn{
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+    margin-right: 29px;
+    margin-top: -11px;
+  }
+  .close:hover,
+  .close:focus {
+    color: rgb(3, 3, 4);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .btn{
     text-align: center;
-}
+    margin-top: 3rem;
+  }
+  button{
+    font-family: 'Source Sans Pro';
+    width:8rem;
+    height: 2.5rem;
+    border-radius: 7%;
+  }
+  button:hover{
+    color: white;
+    background-color: #087021;
+  }
+  
+  /* style="text-align: center; margin-top: 2rem; */

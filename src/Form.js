@@ -1,24 +1,8 @@
 import './Form.css';
 import { useState } from 'react';
-
-
-
-// function OpenModal(){
-//     const [active, setActive] = useState(false);
-    
-//      const toggle = () => {
-//         setActive(!active)
-//      }
-//      return (
-//         <div className='img'>
-//             <button onClick={toggle}>Imagen</button>
-//             <Modal active={active} toggle={toggle}>
-//                 {/* <img src="./img/q1.png" alt='diametro'></img> */}
-//                 <h1>Hola</h1>
-//             </Modal>
-//         </div>
-//      )
-// }
+import Refresh from './Refresh';
+import Modal from "./Modal";
+import logo from "./img/vidapp.png";
 
 const request = async (data) => { 
     const rules = {
@@ -36,18 +20,18 @@ const request = async (data) => {
         input12: { min: 15},
         input13: { min: 80, max: 110},
     }
+    const adapted =  Object.keys(data).reduce((acc, key) => {
+   const { min, max } = rules[key]
+   const value = data[key]
+   if (value < min || value > max) {
+       acc[key] = 'unadapted'
+   } else {
+       acc[key] = 'adapted'
+   }
+   return acc
+}, {})
     
     
-         const adapted =  Object.keys(data).reduce((acc, key) => {
-        const { min, max } = rules[key]
-        const value = data[key]
-        if (value < min || value > max) {
-            acc[key] = 'unadapted'
-        } else {
-            acc[key] = 'adapted'
-        }
-        return acc
-    }, {})
     
     console.log(adapted);
     const rate = Object.values(adapted).filter((value) => value === 'adapted')
@@ -61,6 +45,7 @@ else    window.location.reload();
 };
 
 function Form() {
+    const [modalOpen1, setmodalOpen1] = useState(true);
     const [form, setForm] = useState({
         input1: '',
         input2: '',
@@ -76,12 +61,14 @@ function Form() {
         input12: '',
         input13: '',
     });
+    const handleOpenModal = () => {
+        setmodalOpen1(false);
+      };
     return (
     <div id='root'>
         <div className='document'>
                 <header className='Header'>
-                <img src={require('./img/vidapp.png')} alt="" /><span>®</span>
-                    
+                <img src={require('./img/vidapp.png')} alt="" />
                 </header>
             
             {/* <h2>Suelos</h2>
@@ -467,14 +454,17 @@ function Form() {
                         const data = await request(form);
                         setForm(data);
                     }}
-                    /*                     onClick={async () => {
-                        alert('su casa se encuentra adaptada en un 20%');
-                    }} */
                 >
                     Calcular
                 </button>
             </div>
-        </div>    
+        </div>
+        <Modal estado={modalOpen1} setEstado={setmodalOpen1}>
+                <h3>Aviso </h3>
+                <p>
+                Para utilizar esta herramienta será necesario que tome medidas sobre diferentes localizaciones en el interior de su vivienda...
+                </p>
+        </Modal>    
     </div>
     );
 }
