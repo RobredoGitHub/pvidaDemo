@@ -1,0 +1,70 @@
+
+header{
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+}
+.fakeBody{
+    display: flex;
+}
+
+.slider{
+    width: 80rem;
+    height: 41rem;
+    margin: auto;
+    position: relative;
+    list-style: none;
+    padding: 0;
+    display: flex;
+
+    justify-content: center;
+    align-items: flex-end;
+}
+h2 {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #087021;
+    font-size: 50px;
+}
+.slider  input[type="radio"]{
+    position: relative;
+    margin: 1rem;
+    z-index: 50;
+}
+.slider fieldset{
+    background-color: white;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: fit-content;
+    height: fit-content;
+    opacity: 0;
+
+}
+.slider  input[type="radio"]:checked ~ fieldset{
+    opacity: 1;
+    /* width: ;
+    height: ; */
+}
+
+  
+.btn {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+
+.btn > button{
+    font-family: 'Source Sans Pro';
+    border-radius: 7%;
+    width: 7rem;
+    height: 2rem;
+    font-size: 17px;
+}
+.btn > button:hover{
+    cursor: pointer;
+    background-color: rgb(2, 130, 87);
+}

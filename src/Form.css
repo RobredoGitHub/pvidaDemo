@@ -28,6 +28,17 @@ span{
     margin-right: auto;
     width: 85%;
 }
+p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+input{
+    height: 20px;
+}
+.clear-both {
+    clear: both;
+  }
+
 
 .img{
     margin-top: 1.5rem;
@@ -39,8 +50,8 @@ img{
     
 }
 h1 {
-    margin-top: 1rem;
-    margin-bottom: -1.25rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
     font-size: 80px;
     text-align: center;
     color: #00305E;
@@ -56,7 +67,7 @@ h3 {
     margin-top: 5px;
     margin-bottom: 5px;
 }
-fieldset {
+/* fieldset {
     background-color: #b9b3ab;
     width: 85%;
     margin-left: auto;
@@ -65,37 +76,16 @@ fieldset {
     border-color: #00ACC8;
     border: 9px groove (internal value);
     border-radius: 7px;
-}
+} */
 legend {
 
     font-weight: bold;
 }
-/* label{
 
-    margin-top: 6px;
-    margin-bottom: 6px;
-} */
-
-
-p {
-    margin-top: 18px;
-    margin-bottom: 18px;
-}
 .img{
     margin-left: 15px;
 }
-input[type="number"] {
-    margin-left: 2rem;
-}
-input {
-    height: 1.2rem;
-    width: 8rem;
-    border-radius: 3px;
-    margin-top: 10px;
-    margin-bottom: 2px;
-    margin-left: 5px;
-    margin-right: 5px;
-}
+
 .img{
     width: 35rem;
 }
@@ -107,10 +97,14 @@ input {
 .submitDiv button{
     color: black;
     width: 10rem;
-    height: 2rem;
+    height: 3rem;
+    margin-bottom: 2rem;
 }
 .submitDiv button:hover{
     cursor: pointer;
-    background-color: #00ACC8;
-        
-        }
+}
+.home{
+    width: 60px;
+    position: absolute;
+    top: 3rem;
+}

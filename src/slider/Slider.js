@@ -1,64 +1,7 @@
 import './Slider.css';
-// import { useState } from 'react';
-// import q1 from "./img/q1.png";
-
-
-// const request = async (data) => { 
-//     const rules = {
-//         input1: { min: 150},
-//         input2: { min: 150},
-//         input3: { min: 120},
-//         input4: { min: 100},
-//         input5: { min: 150},
-//         input6: { min: 80},
-//         input7: { min: 120},
-//         input8: { min: 120},
-//         input9: { min: 120},
-//         input10: { min: 5},
-//         input11: { min: 80},
-//         input12: { min: 15},
-//         input13: { min: 80, max: 110},
-//     }
-    
-    
-//          const adapted =  Object.keys(data).reduce((acc, key) => {
-//         const { min, max } = rules[key]
-//         const value = data[key]
-//         if (value < min || value > max) {
-//             acc[key] = 'unadapted'
-//         } else {
-//             acc[key] = 'adapted'
-//         }
-//         return acc
-//     }, {})
-    
-//     console.log(adapted);
-//     const rate = Object.values(adapted).filter((value) => value === 'adapted')
-//     const result = Math.round((rate.length * 100)/13)
-    
-//     if(alert(`Su vivienda se encuentra adaptado en un ${result}%`)){}
-// else    window.location.reload(); 
-  
-  
-
-// };
 
 function Slider() {
-    // const [form, setForm] = useState({
-    //     input1: '',
-    //     input2: '',
-    //     input3: '',
-    //     input4: '',
-    //     input5: '',
-    //     input6: '',
-    //     input7: '',
-    //     input8: '',
-    //     input9: '',
-    //     input10: '',
-    //     input11: '',
-    //     input12: '',
-    //     input13: '',
-    // });
+
     return (
 <div> 
     <header className='Header'>
@@ -67,16 +10,16 @@ function Slider() {
     interiores
         </h1>
     </header>
-    <div class="fakeBody">
-        <ul class="slider">
+    <div className="fakeBody">
+        <ul className="slider">
             <li>
                 <input type="radio" id="sbutton4" name="sradio"/>
                 <label for="sbutton4"></label>
     
-                <fieldset classname="fieldset">
+                <fieldset className="fieldset">
      
                     <h2>Puertas interiores</h2>
-                    <div class='puertas'>
+                    <div className='puertas'>
                         <p>
                             <strong>
                                 Importante: En este caso deberá tomar medidas
@@ -171,7 +114,7 @@ function Slider() {
             <li>
                 <input type="radio" id="sbutton1" name="sradio" checked/>
                 <label for="sbutton1"></label>
-                <fieldset classname="fieldset">
+                <fieldset classNamename="fieldset">
                     <div className='vestibulo'>
                         <h2>Vestíbulo</h2>
                         <div>    
@@ -220,7 +163,7 @@ function Slider() {
             <li>
                 <input type="radio" id="sbutton2" name="sradio"/>
                 <label for="sbutton2"></label>
-                <fieldset classname="fieldset">
+                <fieldset classNamename="fieldset">
                     <h2>Pasillo</h2>
                     <div className='pasillo'>
                         <p>
@@ -286,9 +229,9 @@ function Slider() {
             <li>
                 <input type="radio" id="sbutton3" name="sradio"/>
                 <label for="sbutton3"></label>
-                <fieldset classname="fieldset">
+                <fieldset classNamename="fieldset">
                     <h2>Huecos de paso</h2>
-                    <div class='hueco'>
+                    <div className='hueco'>
                         <p>
                             <strong>
                                 Importante: En este caso deberá tomar medidas
@@ -329,7 +272,7 @@ function Slider() {
             <li>
                 <input type="radio" id="sbutton5" name="sradio"/>
                 <label for="sbutton5"></label>
-                <fieldset classname="fieldset">
+                <fieldset classNamename="fieldset">
                     <h2>Ventanas</h2>
                     <div>
                         <p>
@@ -359,7 +302,7 @@ function Slider() {
             </li>
         </ul>  
     </div> 
-    <div class="btn">
+    <div className="btn">
         <button>submit</button>
     </div>
     

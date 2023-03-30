@@ -11,8 +11,6 @@ function Modal({children, estado, setEstado}) {
     setEstado(false);
 };
 
-const navigate = useNavigate();
-
     return  (
         <div className="m">  
         {estado &&(

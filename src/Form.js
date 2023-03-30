@@ -129,8 +129,6 @@ function Form() {
                             }
                         />
                     </div>
-                    <img className='img' src={require('./img/vestibulo.jpg')} alt="" />
-                    
                 </div>
             
             
@@ -262,7 +260,6 @@ function Form() {
                         }
                     />
                 </div>
-                <img className='img' src={require('./img/puertas.jpg')} alt="" />
                 <div>
                     <label>
                         8. Diámetro libre a ambos lados de la puerta de entrada a la vivienda (cm)
@@ -279,7 +276,6 @@ function Form() {
                         }
                     />
                 </div>
-                <img className='img' src={require('./img/q1.jpg')} alt="" />
                 
                 <h2>Puertas de accesos interiores</h2>
 
@@ -443,8 +439,6 @@ function Form() {
                         }
                     />
                 </div>
-                <img className='img' src={require('./img/mecanismo.jpg')} alt="" />
-                
             
             <div className='submitDiv'>
                 <button
@@ -462,7 +456,7 @@ function Form() {
         <Modal estado={modalOpen1} setEstado={setmodalOpen1}>
                 <h3>Aviso </h3>
                 <p>
-                Para utilizar esta herramienta será necesario que tome medidas sobre diferentes localizaciones en el interior de su vivienda...
+                Para el mejor uso de esta herramienta le aconsejamos tenga a mano una cinta de medir con la que pueda tomar medidas de diferentes espacios con los que cuenta su vivienda. 
                 </p>
         </Modal>    
     </div>

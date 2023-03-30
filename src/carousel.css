@@ -1,0 +1,58 @@
+.fieldset-carousel {
+    max-width: 1000px;
+    text-align: left;
+    margin: 0 auto;
+  }
+  
+  .fieldset-carousel fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .fieldset-carousel legend {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .fieldset-carousel p {
+    /* font-size: 16px; */
+    line-height: 1.5;
+  }
+  
+  .fieldset-carousel .arrows {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .fieldset-carousel .button {
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .fieldset-carousel button:hover {
+    background-color: #368f3f;
+    font-weight: bolder;
+  }
+  .arrow{
+    width: 50px;
+    height: 50px;
+  }
+  .fontSizeButton{
+    position: absolute;
+    top: 3rem;
+    right: 6rem;
+
+  }
+  a{
+    color:#545855;
+  }
+  a:hover{
+    color: #2ba137;
+  }
+  

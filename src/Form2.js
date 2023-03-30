@@ -1,25 +1,9 @@
-import './Form.css';
+import './Slider/Slider';
 import { useState } from 'react';
-import Refresh from './Refresh';
-
-
-
-// function OpenModal(){
-//     const [active, setActive] = useState(false);
-    
-//      const toggle = () => {
-//         setActive(!active)
-//      }
-//      return (
-//         <div className='img'>
-//             <button onClick={toggle}>Imagen</button>
-//             <Modal active={active} toggle={toggle}>
-//                 {/* <img src="./img/q1.png" alt='diametro'></img> */}
-//                 <h1>Hola</h1>
-//             </Modal>
-//         </div>
-//      )
-// }
+import Modal from "./Modal";
+import FontSizeButton from './FontSizeButton';
+import { useNavigate } from "react-router-dom";
+import CustomInput from './CustomInput';
 
 const request = async (data) => { 
     const rules = {
@@ -56,13 +40,20 @@ const request = async (data) => {
     
     if(alert(`Su vivienda se encuentra adaptado en un ${result}%`)){}
 else    window.location.reload(); 
-  
-  
-
-};
+  };
 
 function Form2() {
-    const [Form2, setForm2] = useState({
+    console.log('FORM2');
+    const navigate = useNavigate();
+    const [modalOpen1, setmodalOpen1] = useState(false);
+    const [modalOpen2, setmodalOpen2] = useState(false);
+    const [modalOpen3, setmodalOpen3] = useState(false);
+    const [modalOpen4, setmodalOpen4] = useState(false);
+    const [modalOpen5, setmodalOpen5] = useState(false);
+    const [modalOpen6, setmodalOpen6] = useState(false);
+    const [modalOpen7, setmodalOpen7] = useState(false);
+    
+    const [form, setForm] = useState({
         input1: '',
         input2: '',
         input3: '',
@@ -77,8 +68,44 @@ function Form2() {
         input12: '',
         input13: '',
     });
+
+    const handleReset = () => {
+        setForm ({input1: '',
+        input2: '',
+        input3: '',
+        input4: '',
+        input5: '',
+        input6: '',
+        input7: '',
+        input8: '',
+        input9: '',
+        input10: '',
+        input11: '',
+        input12: '',
+        input13: '',})
+    }
+
+    const handleOpenModal1 = () => {
+        setmodalOpen1(true);
+      };
+      const handleOpenModal2 = () => {
+        setmodalOpen2(true);
+      };const handleOpenModal3 = () => {
+        setmodalOpen3(true);
+      };const handleOpenModal4 = () => {
+        setmodalOpen4(true);
+      };const handleOpenModal5 = () => {
+        setmodalOpen5(true);
+      };const handleOpenModal6 = () => {
+        setmodalOpen6(true);
+      };const handleOpenModal7 = () => {
+        setmodalOpen7(true);
+      };
+      
+      
+      
     return (
-    <div id='root'>
+        <div id='root'>
         <div className='document'>
                 <header className='Header'>
                 <img src={require('./img/vidapp.png')} alt="" />
@@ -96,7 +123,7 @@ function Form2() {
                     </p>
                     <label>
                         <i>
-                            En caso que quiera indicar la inForm2ación en cuanto
+                            En caso que quiera indicar la información en cuanto
                             al suelo interior de su hogar indique el material.
                         </i>
                     </label>{' '}
@@ -121,20 +148,23 @@ function Form2() {
             
                 <div className='vestibulo'>
                     <div>
+                        <p>
+                            <strong>
+                                Nota explicativa: El espacio libre deberá ser igual 
+                            </strong>
+                        </p>
                         <label>
-                            1. Introduzca en centímetros el diámetro de la circunferencia despejada de mayor tamaño que puede caber dentro del espacio de vestíbulo o entrada de la vivienda, estando todas las puertas abiertas.
+                            1. Diametro de circunferencia libre no barrida por las
+                            puertas (cm)
                         </label>
-                        <input
-                            type='number'
-                            name='vestibulo2'
-                            value={Form2.input1}
-                            onChange={(e) =>
-                                setForm2((lastValue) => ({
+                        <CustomInput value={form.input1} onChange={(e) =>
+                                setForm((lastValue) => ({
                                     ...lastValue,
                                     input1: e.target.value,
                                 }))
-                            }
-                        />
+                            }/>
+                        <br></br>
+                        <a onClick={handleOpenModal5}>Click aquí para ver la imagen</a>
                     </div>
                 </div>
             
@@ -145,16 +175,19 @@ function Form2() {
                 <div className='pasillo'>
                     <p>
                         <strong>
-                            Importante: En lo referente al pasillo 
-                            nos interesa prestar atención al ancho libre del mismo, 
-                            es decir, al espacio despejado para caminar a través de
-                            él. El pasillo puede ser de dos formas: 
+                            Importante: En lo referente al pasillo nos interesa
+                            prestar atención al ancho del mismo. Este puede ser
+                            de dos formas: misma anchura(anchura libre) a largo
+                            de todo el pasillo, o por el contrario, sufrir
+                            algún tipo estrechamiento en ciertos puntos
+                            (entrechamiento puntual). Por favor, según el caso,
+                            marque la casilla para habilitar el resto de campos.
                         </strong>
                     </p>
                     <div className='preguntas'>
                         <label>
                             <i>
-                            Misma anchura (espacio despejado de paso) a largo de todo el pasillo, es decir, el ancho del pasillo no varía en ningún momento
+                                En caso de que la anchura sea la misma a lo largo de todo el pasillo...
                             </i>
                         </label>
                         <br></br>
@@ -162,9 +195,9 @@ function Form2() {
                         <input
                             type='number'
                             name='estrechamiento'
-                            value={Form2.input3}
+                            value={form.input3}
                             onChange={(e) =>
-                                setForm2((lastValue) => ({
+                                setForm((lastValue) => ({
                                     ...lastValue,
                                     input3: e.target.value,
                                 }))
@@ -175,46 +208,24 @@ function Form2() {
                         <br></br>
                         <label>
                             <i>
-                            O por el contrario, sufrir algún tipo estrechamiento en ciertos puntos (estrechamiento puntual),
-                            como puede ser un pilar, un elemento de la pared, un mueble, etc; en dicho punto el pasillo pasa 
-                            a tener un espacio despejado de paso de menor tamaño.
-
+                                En caso de que exista un estrechamiento puntual
+                                (como por ejemplo un pilar)
                             </i>
                         </label>
                         <br></br>
                         <label>3. Ancho libre (cm)</label>
-                        <input
-                            type='number'
-                            name='estrechamiento'
-                            value={Form2.input3}
-                            onChange={(e) =>
-                                setForm2((lastValue) => ({
-                                    ...lastValue,
-                                    input3: e.target.value,
-                                }))
-                            }
-                        />
+                       <CustomInput value={form.input3}/>
                         <br></br>
                         <label>4. Anchura del estrechamiento (cm)</label>
-                        <input
-                            type='number'
-                            name='estrechamiento'
-                            value={Form2.input4}
-                            onChange={(e) =>
-                                setForm2((lastValue) => ({
-                                    ...lastValue,
-                                    input4: e.target.value,
-                                }))
-                            }
-                        />
+                        <CustomInput value={form.input4}/>
                         <br></br>
                           <label>5. Ancho libre en el punto del estrechamiento (cm)</label>
                         <input
                             type='number'
                             name='estrechamiento'
-                            value={Form2.input4}
+                            value={form.input4}
                             onChange={(e) =>
-                                setForm2((lastValue) => ({
+                                setForm((lastValue) => ({
                                     ...lastValue,
                                     input4: e.target.value,
                                 }))
@@ -234,9 +245,9 @@ function Form2() {
                         <input
                             type='number'
                             name='estrechamiento'
-                            value={Form2.input5}
+                            value={form.input5}
                             onChange={(e) =>
-                                setForm2((lastValue) => ({
+                                setForm((lastValue) => ({
                                     ...lastValue,
                                     input5: e.target.value,
                                 }))
@@ -252,35 +263,40 @@ function Form2() {
 
                 <div>
                     <label>
-                        7.  Con la puerta de entrada a la vivienda totalmente abierta, mida en centímetros el ancho del hueco que queda para pasar a través de ella.
+                        7. Anchura libre de paso de la puerta de entrada (cm)
                     </label>
                     <input
                         type='number'
                         name='hueco1'
-                        value={Form2.input6}
+                        value={form.input6}
                         onChange={(e) =>
-                            setForm2((lastValue) => ({
+                            setForm((lastValue) => ({
                                 ...lastValue,
                                 input6: e.target.value,
                             }))
                         }
                     />
+                    <br></br>
+                    <a onClick={handleOpenModal4}>Click aquí para ver la imagen</a>
+
                 </div>
                 <div>
                     <label>
-                        8. Introduzca en centímetros el diámetro de la circunferencia despejada de mayor tamaño que puede caber a ambos lados de la puerta de entrada de la vivienda.
+                        8. Diámetro libre a ambos lados de la puerta de entrada a la vivienda (cm)
                     </label>
                     <input
                         type='number'
                         name='hueco2'
-                        value={Form2.input7}
+                        value={form.input7}
                         onChange={(e) =>
-                            setForm2((lastValue) => ({
+                            setForm((lastValue) => ({
                                 ...lastValue,
                                 input7: e.target.value,
                             }))
                         }
                     />
+                     <br></br>
+                    <a onClick={handleOpenModal6}>Click aquí para ver la imagen</a>
                 </div>
                 
                 <h2>Puertas de accesos interiores</h2>
@@ -290,7 +306,9 @@ function Form2() {
  
                     <p>
                         <strong>
-                        Importante: En esta sección deberá tomar medidas de los espacios cercanos a las puertas que acceden a las diferentes habitaciones de su hogar.
+                            Importante : En esta sección deberá tomar medidas de
+                            los espacios cercanos a la puertas que acceden a las
+                            diferentes habitaciones de su hogar
                         </strong>
                     </p>
                     <div className='preguntas'>
@@ -304,14 +322,15 @@ function Form2() {
 
                         <div>
                             <label>
-                            9. Si las puertas que dan acceso a las habitaciones de su hogar pueden abrirse 90º o más (hasta formar una L o más), marque esta casilla. 
+                                9. Marque esta casilla en caso de que las puertas
+                                interiores tengan un ángulo de 90º o superior
                             </label>
                             <input
                                 type='checkbox'
                                 name='hueco2'
-                                value={Form2.input14}
+                                value={form.input14}
                                 onChange={(e) =>
-                                    setForm2((lastValue) => ({
+                                    setForm((lastValue) => ({
                                         ...lastValue,
                                         input14: e.target.value,
                                     }))
@@ -321,14 +340,14 @@ function Form2() {
                         <div className='preguntas'>
                             <div>
                                 <label>
-                                10. Indique en centímetros la distancia vertical entre el pomo de la puerta y el suelo, es decir, la altura a la que se encuentra el pomo. 
+                                    10. Distancia entre el suelo y el pomo (cm)
                                 </label>
                                 <input
                                     type='number'
                                     name='hueco4'
-                                    value={Form2.input8}
+                                    value={form.input8}
                                     onChange={(e) =>
-                                        setForm2((lastValue) => ({
+                                        setForm((lastValue) => ({
                                             ...lastValue,
                                             input8: e.target.value,
                                         }))
@@ -340,16 +359,18 @@ function Form2() {
                                 <br></br>
                                 <label>
                                     <i>
-                                    En caso de que su hogar tenga puertas acristaladas o ventanales y sobre el vidrio exista algún vinilo o pegatina de señalización, rellene estos apartados:
+                                        En caso de puertas
+                                        acristaladas/transaparentes, exista
+                                        señalización sobre las mismas
                                     </i>
                                 </label>
 
                                 {/* <input
                                     type='checkbox'
                                     name='hueco6'
-                                   value={Form2.input10}
+                                   value={form.input10}
                                     onChange={(e) =>
-                                        setForm2((lastValue) => ({
+                                        setForm((lastValue) => ({
                                             ...lastValue,
                                             input10: e.target.value,
                                         }))
@@ -360,9 +381,9 @@ function Form2() {
                                 <input
                                     type='number'
                                     name='hueco6'
-                                    value={Form2.input10}
+                                    value={form.input10}
                                     onChange={(e) =>
-                                        setForm2((lastValue) => ({
+                                        setForm((lastValue) => ({
                                             ...lastValue,
                                             input10: e.target.value,
                                         }))
@@ -374,20 +395,22 @@ function Form2() {
                             <div>
                                 <label>
                                     <i>
-                                    En caso de que en su hogar tenga puertas de apertura automática, rellene estos apartados: 
+                                        En caso de puertas de doble filo(puerta
+                                        doble) con mecanismo automático (puerta
+                                        automática)de apertura y cierre, marque
+                                        esta casilla
                                     </i>
                                 </label>
                                 <br></br>
                                 <label>
-                                12. Mida en centímetros el ancho del hueco que queda para pasar a través de ella.
-
+                                   12. Anchura libre de paso 
                                 </label>
                                 <input
                                     type='number'
                                     name='hueco6'
-                                    value={Form2.input11}
+                                    value={form.input11}
                                     onChange={(e) =>
-                                        setForm2((lastValue) => ({
+                                        setForm((lastValue) => ({
                                             ...lastValue,
                                             input11: e.target.value,
                                         }))
@@ -397,14 +420,14 @@ function Form2() {
                         </div>
                         <div>
                             <label>
-                            13. Indique en segundos el tiempo estimado que transcurre entre que se abre y se vuelve a cerrar. 
+                                13. Tiempo estimado para apertura/cierra (segundos)
                             </label>
                             <input
                                 type='number'
                                 name='hueco6'
-                                value={Form2.input12}
+                                value={form.input12}
                                 onChange={(e) =>
-                                    setForm2((lastValue) => ({
+                                    setForm((lastValue) => ({
                                         ...lastValue,
                                         input12: e.target.value,
                                     }))
@@ -418,38 +441,79 @@ function Form2() {
             
                 <p>
                     <strong>
-                    Importante: En este campo se hace referencia a la altura a la que se encuentran 
-                    en mecanismo de apertura de las ventanas de su hogar. Esta medida se toma desde 
-                    el suelo hasta el pomo, manivela o hendidura que se use para abrir y cerrar la ventana.
+                        Importante: En este campo se hace refrencia a la altura
+                        a la que se encuentran en mecanismo de apertura de las
+                        ventanas de su hogar. Esta medida se toma desde el suelo
+                        hasta la manivela/pomo de la ventana.
                     </strong>
                 </p>
                 <div>
-                    <label>14. Indique en centímetros la distancia vertical entre el suelo y el elemento de apertura de la ventana, es decir, la altura a la que se encuentra.</label>
+                    <label>14. Altura del mecanismo de apertura</label>
                     <input
                         type='number'
                         name='alturaV'
-                        value={Form2.input13}
+                        value={form.input13}
                         onChange={(e) =>
-                            setForm2((lastValue) => ({
+                            setForm((lastValue) => ({
                                 ...lastValue,
                                 input13: e.target.value,
                             }))
                         }
                     />
+                     <br></br>
+                    <a onClick={handleOpenModal2}>Click aquí para ver la imagen</a>                    
                 </div>
+            
             <div className='submitDiv'>
                 <button
                     type='submit'
                     className='submit'
                     onClick={async () => {
-                        const data = await request(Form2);
-                        setForm2(data);
+                        const data = await request(form);
+                        setForm(data);
                     }}
                 >
                     Calcular
                 </button>
             </div>
-        </div>    
+            <div className='resettDiv'>
+                <button
+                    type='submit'
+                    className='submit'
+                    onClick={handleReset}
+                >
+                    Reset
+                </button>
+            </div>
+            <div>
+            <a><img onClick={() => navigate("/") } className="home" src={require('./img/iconos/hogar.png')} alt="" /></a>
+            </div>
+
+            <FontSizeButton/>
+
+        </div>
+        <Modal estado={modalOpen1} setEstado={setmodalOpen1}>
+            <img className="modalImg" src={require('./img/alturaPomo.jpg')} alt="" />
+        </Modal>
+        <Modal estado={modalOpen2} setEstado={setmodalOpen2}>
+            <img className="modalImg" src={require('./img/formulario/personal/alturaVentana.jpg')} alt="" />
+        </Modal>   
+        <Modal estado={modalOpen3} setEstado={setmodalOpen3}>
+            <img className="modalImg" src={require('./img/formulario/personal/anchoPaso.jpg')} alt="" />
+        </Modal>   
+        <Modal estado={modalOpen4} setEstado={setmodalOpen4}>
+            <img className="modalImg" src={require('./img/formulario/personal/anchura.jpg')} alt="" />
+        </Modal>   
+        <Modal estado={modalOpen5} setEstado={setmodalOpen5}>
+            <img className="modalImg" src={require('./img/formulario/personal/diametroLibre.jpg')} alt="" />
+        </Modal>
+        <Modal estado={modalOpen6} setEstado={setmodalOpen6}>
+            <img className="modalImg" src={require('./img/formulario/personal/diametroLibre(ambos).jpg')} alt="" />
+        </Modal>
+        <Modal estado={modalOpen7} setEstado={setmodalOpen7}>
+            <img className="modalImg" src={require('./img/formulario/personal/pasilloEstrechamiento.jpg')} alt="" />
+        </Modal>
+                      
     </div>
     );
 }

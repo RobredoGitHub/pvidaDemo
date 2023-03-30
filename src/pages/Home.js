@@ -2,8 +2,8 @@ import React from "react";
 import "./home.css";
 import logo from "../img/vidapp.png";
 import vida from "../img/footer/Logo-Proyecto-Vida.png";
-import icon1 from "../img/iconos/personal.svg";
-import icon2 from "../img/iconos/profesional.svg";
+import icon1 from "../img/iconos/personal.png";
+import icon2 from "../img/iconos/profesional.png";
 import { useNavigate } from "react-router-dom";
 import Modal from "../Modal";
 import { useState } from "react";
@@ -32,11 +32,11 @@ function Home(){
         </div>
             
             <div className="flex-container">
-                <button onClick={() => navigate("./formulario-personal")} className="btn2">
+                <button onClick={() => navigate("./carrusel-personal")} className="btn2">
                     <span>Uso personal</span>
                     <img className="icon" src={icon1} alt="" />
                 </button>
-                <button onClick={() => navigate("./formulario-profesional")} className="btn1">
+                <button onClick={() => navigate("./carrusel-profesional")} className="btn1">
                     <span>Uso profesional </span>
                     <img className="icon" src={icon2} alt="" />
                 </button>
