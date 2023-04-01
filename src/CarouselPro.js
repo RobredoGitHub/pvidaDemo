@@ -8,7 +8,7 @@ import Home from './pages/Home';
 import { ListPro } from './listPro'
 
 
-function FieldsetCarousel({ estado, setEstado }) {
+function FieldsetCarouselPro({ estado, setEstado }) {
 
   const [form, setForm] = useState({
     input1: '',
@@ -46,11 +46,11 @@ const handleReset = () => {
 const navigate = useNavigate();
 
   const handlePrev = () => {
-    setEstado(estado === 0 ? List.length - 1 : estado - 1);
+    setEstado(estado === 0 ? ListPro.length - 1 : estado - 1);
   };
 
   const handleNext = () => {
-    setEstado(estado === List.length - 1 ? 0 : estado + 1);
+    setEstado(estado === ListPro.length - 1 ? 0 : estado + 1);
   };
 
 
@@ -62,7 +62,7 @@ const navigate = useNavigate();
                 </header>
       <form>
         <fieldset>
-        { List[estado](form, setForm)}
+        { ListPro[estado](form, setForm)}
         </fieldset>
       </form>
       <div className="arrows">
@@ -79,4 +79,4 @@ const navigate = useNavigate();
   );
 };
 
-export default FieldsetCarousel;
+export default FieldsetCarouselPro;

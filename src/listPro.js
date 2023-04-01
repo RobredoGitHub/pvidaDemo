@@ -105,7 +105,7 @@ const Ventanas = (form, setForm) => {
     )
 }
 
-export const List = [
+export const ListPro = [
     Vestibulos,
     Pasillos,
     Huecos,

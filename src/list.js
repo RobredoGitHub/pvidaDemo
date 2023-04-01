@@ -15,7 +15,7 @@ const Vestibulos = (form, setForm) => {
                     puede caber dentro del espacio de vestíbulo o entrada de la vivienda, estando todas las puertas
                     abiertas.</p>
                 <CustomInput id='input1' form={form} setForm={setForm} /><br></br>
-                <a >Click aquí para ver la imagen</a>
+                <a>Click aquí para ver la imagen</a>
                 {/* <Modal estado={modalOpen1} setEstado={setmodalOpen1}>
                 <img className="modalImg" src={require('./img/alturaPomo.jpg')} alt="" />
             </Modal> */}

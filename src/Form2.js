@@ -1,4 +1,4 @@
-import './Slider/Slider';
+
 import { useState } from 'react';
 import Modal from "./Modal";
 import FontSizeButton from './FontSizeButton';

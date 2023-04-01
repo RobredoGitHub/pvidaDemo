@@ -2,8 +2,9 @@ import FieldsetCarousel from "./Carousel";
 import  { useState } from 'react';
 import Modal from "./Modal";
 import React from "react";
+import FieldsetCarouselPro from "./CarouselPro";
 
-const Paint = () => {
+const PaintPro = () => {
     const [modalOpen1, setmodalOpen1] = useState(true);
     const [activeIndex, setActiveIndex] = useState(0);
     const handleOpenModal = () => {
@@ -12,7 +13,7 @@ const Paint = () => {
 
           return (
         <div>
-          <FieldsetCarousel estado={activeIndex} setEstado={setActiveIndex} />
+          <FieldsetCarouselPro estado={activeIndex} setEstado={setActiveIndex} />
           <Modal estado={modalOpen1} setEstado={setmodalOpen1}>
                 <h3>Aviso </h3>
                 <p>
@@ -24,4 +25,4 @@ const Paint = () => {
     
     }
 
-    export default Paint; 
+    export default PaintPro; 
