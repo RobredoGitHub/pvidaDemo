@@ -1,11 +1,12 @@
 import React from "react";
+import Paint from "./Paint";
+import FieldsetCarousel from "./Carousel";
 
-function Resultado() {
-    return (
-        <div>
-            <h1>El porcentaje de adaptación de su vivienda de un 0%</h1>
-        </div>
-        )
+function Resultado({resultado}) {
+    console.log(resultado);
+
+    return <div>The result is: {resultado}%</div>; 
+        
     
 }
 

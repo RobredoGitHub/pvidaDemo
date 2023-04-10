@@ -7,9 +7,7 @@ import FieldsetCarouselPro from "./CarouselPro";
 const PaintPro = () => {
     const [modalOpen1, setmodalOpen1] = useState(true);
     const [activeIndex, setActiveIndex] = useState(0);
-    const handleOpenModal = () => {
-      setmodalOpen1(true);
-    };
+
 
           return (
         <div>

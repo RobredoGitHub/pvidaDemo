@@ -61,7 +61,7 @@ const Huecos = (form, setForm) => {
                 <CustomInput id='input8' form={form} setForm={setForm} />
             </div>
             <div className="pregunta">
-                <p className="pregunta"> 8. Anchura libre de paso de la puerta de entrada (cm)</p>
+                <p className="pregunta">  8. Diámetro libre a ambos lados de la puerta de entrada a la vivienda (cm)</p>
                 <CustomInput id='input9' form={form} setForm={setForm} />
             </div>
         </div>

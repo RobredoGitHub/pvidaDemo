@@ -36,11 +36,7 @@ const request = async (data) => {
     console.log(adapted);
     const rate = Object.values(adapted).filter((value) => value === 'adapted')
     const result = Math.round((rate.length * 100)/13)
-    
-    if(alert(`Su vivienda se encuentra adaptado en un ${result}%`)){}
-else    window.location.reload(); 
-  
-  
+
 
 };
 

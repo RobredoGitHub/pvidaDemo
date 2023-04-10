@@ -5,18 +5,13 @@ import vida from "../img/footer/Logo-Proyecto-Vida.png";
 import icon1 from "../img/iconos/personal.png";
 import icon2 from "../img/iconos/profesional.png";
 import { useNavigate } from "react-router-dom";
-import Modal from "../Modal";
 import { useState } from "react";
 
 
 
 function Home(){
-    const [modalOpen1, setmodalOpen1] = useState(false);
     const navigate = useNavigate();
     
-    const handleOpenModal = () => {
-        setmodalOpen1(true);
-      };
     return (
 
     <div>
@@ -25,11 +20,11 @@ function Home(){
             <img src={logo} alt="" />
    
         </header>
-        <div className="h3">
+        <div className="main">
             <h3>
                 ¿en qué medida se encuentra adaptado el hogar para que personas mayores o con discapacidad lo habiten de forma cómoda?
             </h3>
-        </div>
+
             
             <div className="flex-container">
                 <button onClick={() => navigate("./carrusel-personal")} className="btn2">
@@ -41,7 +36,8 @@ function Home(){
                     <img className="icon" src={icon2} alt="" />
                 </button>
             </div>
-            <footer className="pie-pagina">
+        </div>
+        <footer className="pie-pagina">
                 <div className="grupo1">
                     <div className="box">
                         <figure>
@@ -65,7 +61,7 @@ function Home(){
                 <div className="grupo2">
                     <small>&copy; 2023<b> Proyecto vida</b> - Todos los derechos reservados.</small>
                 </div>
-            </footer>
+        </footer>
     </div>
 
 
