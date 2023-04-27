@@ -17,7 +17,8 @@ function App(){
     return(
     <Router>
         <Routes>
-            <Route path="resultado" element={<Resultado/>}/>
+            {/* <Route path="/resultado/:resultado" component={Resultado} /> */}
+            <Route path="resultado/:resultado" element={<Resultado/>}/>
             <Route path="carrusel-profesional" element={<PaintPro/>}/>
             <Route path="carrusel-personal" element={<Paint/>}/>
             <Route path="/" element={<Home/>}/>

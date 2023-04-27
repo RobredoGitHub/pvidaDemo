@@ -13,8 +13,11 @@ function FontSizeButton() {
   }
 
   useEffect(() => {
-    document.body.style.fontSize = isLarge ? '25px' : '35px';
-    // inputElement.style.height = isLarge ? '25px' : '35px';
+    const formElement = document.querySelector('.form');
+
+    if (formElement) {
+      formElement.style.fontSize = isLarge ? '35px' : '25px';
+    }
 
   }, [isLarge]);
   

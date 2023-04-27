@@ -1,10 +1,8 @@
 
 import React, { useState } from 'react';
 import './carousel.css'
-import Modal from "./Modal";
 import FontSizeButton from './FontSizeButton';
 import { Route, Routes, useNavigate } from "react-router-dom";
-import Home from './pages/Home';
 import { ListPro } from './listPro'
 
 
@@ -27,6 +25,43 @@ function FieldsetCarouselPro({ estado, setEstado }) {
     input14: ''
 });
 
+const calculate = (data) => {
+  const rules = {
+    input1: { min: 150},
+    input2: { min: 150},
+    input3: { min: 120},
+    input4: { min: 100},
+    input5: { min: 150},
+    input6: { min: 80},
+    input7: { min: 120},
+    input8: { min: 120},
+    input9: { min: 120},
+    input10: { min: 5},
+    input11: { min: 80},
+    input12: { min: 15},
+    input13: { min: 80, max: 110},
+    input14: { min: 15},
+  }
+  
+  
+    const adapted =  Object.keys(data).reduce((acc, key) => {
+    const { min, max } = rules[key]
+    const value = data[key]
+    if (value < min || value > max) {
+        acc[key] = 'unadapted'
+    } else {
+        acc[key] = 'adapted'
+    }
+    return acc
+  }, {})
+  
+  console.log("Adapted: " ,adapted);
+  const rate = Object.values(adapted).filter((value) => value === 'adapted');
+  console.log("Rate: ", rate);
+  const resultado = Math.round((rate.length * 100)/14);
+  navigate(`/resultado/${resultado}`)
+  
+}
 
 const navigate = useNavigate();
 
@@ -55,7 +90,7 @@ const navigate = useNavigate();
         <img className='arrow' src={require('./img/formulario/next.png')} onClick={handleNext}/>
       </div>
       <div className='submitDiv'>
-        <button className='button'>Calcular</button>
+        <button onClick={() => calculate(form)} className='button'>Calcular</button>
       </div>
       <a><img onClick={() => navigate("/")} className="home" src={require('./img/iconos/hogar.png')} alt="" /></a>
       <FontSizeButton/>   

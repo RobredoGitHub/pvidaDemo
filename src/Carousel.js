@@ -5,8 +5,10 @@ import FontSizeButton from './FontSizeButton';
 import { useNavigate } from "react-router-dom";
 import { List } from './list'
 
+
+
 function FieldsetCarousel({ estado, setEstado}) {
- 
+  const navigate = useNavigate();
   const [form, setForm] = useState({
     input1: '',
     input2: '',
@@ -23,8 +25,7 @@ function FieldsetCarousel({ estado, setEstado}) {
     input13: '',
     input14: ''
 });
-
-
+// const history = useHistory();
 // const [result, setResult] = useState(40)
 const calculate = (data) => {
   const rules = {
@@ -60,13 +61,11 @@ const calculate = (data) => {
   const rate = Object.values(adapted).filter((value) => value === 'adapted');
   console.log("Rate: ", rate);
   const resultado = Math.round((rate.length * 100)/14);
-  // console.log("resultado:", resultado);
-  // setResult(Math.round((rate.length * 100)/14));
-  console.log(resultado)
+  navigate(`/resultado/${resultado}`)
   
 }
 
-const navigate = useNavigate();
+
 
 const handlePrev = () => {
   setEstado(estado === 0 ? List.length - 1 : estado - 1);
@@ -82,7 +81,7 @@ const handleNext = () => {
       <header className='Header'>
                 <img  src={require('./img/vidapp.png')} alt="img" />
                 </header>
-      <form>
+      <form className='form'>
         <fieldset>
         { List[estado](form, setForm)}
         </fieldset>
@@ -92,12 +91,10 @@ const handleNext = () => {
         <img alt='img' className='arrow' src={require('./img/formulario/next.png')} onClick={handleNext}/>
       </div>
       <div className='submitDiv'>
-        <button onClick={() => navigate("/resultado")} className='button'>Calcular</button>
+        <button onClick={() => calculate(form)} className='button'>Calcular</button>
       </div>
-      <a><img onClick={() =>calculate(form) } className="home" src={require('./img/iconos/hogar.png')} alt="img" /></a>
+      <a><img onClick={() => navigate("/") } className="home" src={require('./img/iconos/hogar.png')} alt="img" /></a>
       <FontSizeButton/>
-    
-   
     </div>
                 
   );

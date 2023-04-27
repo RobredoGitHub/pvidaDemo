@@ -1,11 +1,12 @@
 import React from "react";
-import Paint from "./Paint";
-import FieldsetCarousel from "./Carousel";
+import { useParams } from 'react-router-dom';
 
-function Resultado({resultado}) {
-    console.log(resultado);
 
-    return <div>The result is: {resultado}%</div>; 
+function Resultado() {
+const { resultado } = useParams();
+
+
+    return <div id="container" style={{padding: "2px"} }><h1 id="centered-text">Su casa se encuentra adaptada en un {resultado}%</h1></div>; 
         
     
 }
