@@ -7,9 +7,9 @@ const Paint = () => {
     const [activeIndex, setActiveIndex] = useState(0);
     const [result, setResult] = useState(50);
     const [modalOpen1, setmodalOpen1] = useState(true);
-    const handleOpenModal = () => {
-      setmodalOpen1(true);
-    };
+    // const handleOpenModal = () => {
+    //   setmodalOpen1(true);
+    // };
 
           return (
         <div>

@@ -1,9 +1,11 @@
 
 import React, { useState } from 'react';
 import './carousel.css'
+import './Form.css'
 import FontSizeButton from './FontSizeButton';
 import { Route, Routes, useNavigate } from "react-router-dom";
 import { ListPro } from './listPro'
+import logo from "./img/logo.png";
 
 
 function FieldsetCarouselPro({ estado, setEstado }) {
@@ -78,7 +80,7 @@ const navigate = useNavigate();
 
     <div className="fieldset-carousel">
       <header className='Header'>
-                <img src={require('./img/vidapp.png')} alt="" />
+      <img  src={logo} alt="img" />
                 </header>
       <form>
         <fieldset>

@@ -4,10 +4,37 @@ import './carousel.css'
 import FontSizeButton from './FontSizeButton';
 import { useNavigate } from "react-router-dom";
 import { List } from './list'
+import Modal from './Modal';
+import logo from "./img/logo.png";
 
 
 
 function FieldsetCarousel({ estado, setEstado}) {
+  const [modalOpen1, setmodalOpen1] = useState(false);
+  const [modalOpen2, setmodalOpen2] = useState(false);
+  const [modalOpen3, setmodalOpen3] = useState(false);
+  const [modalOpen4, setmodalOpen4] = useState(false);
+  const [modalOpen5, setmodalOpen5] = useState(false);
+  const [modalOpen6, setmodalOpen6] = useState(false);
+  const [modalOpen7, setmodalOpen7] = useState(false);
+
+  const handleOpenModal1 = () => {
+    setmodalOpen1(true);
+  };
+  const handleOpenModal2 = () => {
+    setmodalOpen2(true);
+  };  const handleOpenModal3 = () => {
+    setmodalOpen3(true);
+  };  const handleOpenModal4 = () => {
+    setmodalOpen4(true);
+  };  const handleOpenModal5 = () => {
+    setmodalOpen5(true);
+  };  const handleOpenModal6 = () => {
+    setmodalOpen6(true);
+  };const handleOpenModal7 = () => {
+    setmodalOpen7 (true);
+  };
+ 
   const navigate = useNavigate();
   const [form, setForm] = useState({
     input1: '',
@@ -25,8 +52,6 @@ function FieldsetCarousel({ estado, setEstado}) {
     input13: '',
     input14: ''
 });
-// const history = useHistory();
-// const [result, setResult] = useState(40)
 const calculate = (data) => {
   const rules = {
     input1: { min: 150},
@@ -64,9 +89,6 @@ const calculate = (data) => {
   navigate(`/resultado/${resultado}`)
   
 }
-
-
-
 const handlePrev = () => {
   setEstado(estado === 0 ? List.length - 1 : estado - 1);
 };
@@ -79,11 +101,12 @@ const handleNext = () => {
 
     <div className="fieldset-carousel">
       <header className='Header'>
-                <img  src={require('./img/vidapp.png')} alt="img" />
-                </header>
+        <img  src={logo} alt="img" />
+      </header>
       <form className='form'>
         <fieldset>
-        { List[estado](form, setForm)}
+        { List[estado](form, setForm, { onOpenModal1: handleOpenModal1, onOpenModal2: handleOpenModal2, onOpenModal3: handleOpenModal3,  onOpenModal4: handleOpenModal4,  onOpenModal5: handleOpenModal5,  onOpenModal6: handleOpenModal6,  onOpenModal7: handleOpenModal7  } )}
+          
         </fieldset>
       </form>
       <div className="arrows">
@@ -95,11 +118,31 @@ const handleNext = () => {
       </div>
       <a><img onClick={() => navigate("/") } className="home" src={require('./img/iconos/hogar.png')} alt="img" /></a>
       <FontSizeButton/>
+      <Modal estado={modalOpen1} setEstado={setmodalOpen1}>
+        <a><img className="modalImg" src={require('./img/diametroLibre.jpg')} alt="" /></a>
+      </Modal>
+      <Modal estado={modalOpen2} setEstado={setmodalOpen2}>
+        <a><img className="modalImg" src={require('./img/pasilloEstrechamiento.jpg')} alt="" /></a>
+      </Modal>
+      <Modal estado={modalOpen3} setEstado={setmodalOpen3}>
+        <a><img className="modalImg" src={require('./img/anchoPaso.jpg')} alt="" /></a>
+      </Modal>
+      <Modal estado={modalOpen4} setEstado={setmodalOpen4}>
+        <a><img className="modalImg" src={require('./img/diametroLibre(ambos).jpg')} alt="" /></a>
+      </Modal>
+      <Modal estado={modalOpen5} setEstado={setmodalOpen5}>
+        <a><img className="modalImg" src={require('./img/alturaPomo.jpg')} alt="" /></a>
+      </Modal>
+      <Modal estado={modalOpen6} setEstado={setmodalOpen6}>
+        <a><img className="modalImg" src={require('./img/anchura.jpg')} alt="" /></a>
+      </Modal>
+      <Modal estado={modalOpen7} setEstado={setmodalOpen7}>
+        <a><img className="modalImg" src={require('./img/alturaVentana.jpg')} alt="" /></a>
+      </Modal>
     </div>
                 
   );
 };
-
 
 
 export default FieldsetCarousel;
