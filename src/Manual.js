@@ -3,14 +3,14 @@ import { useParams } from 'react-router-dom';
 import "./pages/home.css"
 // import FontSizeButton from './FontSizeButton';
 import { useNavigate } from "react-router-dom";
-import iconF1 from "./img/footer/PROYECTOV.png";
-import iconF2 from "./img/footer/JUNTA.png";
-import iconF3 from "./img/footer/UMA.png";
-import iconF4 from "./img/footer/VIDA.png";
-import twitter from "./img/redes/twitter.png";
-import youtube from "./img/redes/youtube.png";
-import facebook from "./img/redes/facebook.png";
-import instagram from "./img/redes/instagram.png";
+import iconF1 from "./img/footer/proyectov.png";
+import iconF2 from "./img/footer/junta.png";
+import iconF3 from "./img/footer/uma.png";
+import iconF4 from "./img/footer/vida.png";
+// import twitter from "./img/redes/twitter.png";
+// import youtube from "./img/redes/youtube.png";
+// import facebook from "./img/redes/facebook.png";
+// import instagram from "./img/redes/instagram.png";
 
 
 function Manual() {
