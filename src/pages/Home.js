@@ -6,10 +6,6 @@ import iconF1 from "../img/footer/proyectov.png";
 import iconF2 from "../img/footer/junta.png";
 import iconF3 from "../img/footer/uma.png";
 import iconF4 from "../img/footer/vida.png";
-// import twitter from "../img/redes/twitter.png";
-// import youtube from "../img/redes/youtube.png";
-// import facebook from "../img/redes/facebook.png";
-// import instagram from "../img/redes/instagram.png";
 import  { useState } from 'react';
 import Modal from "../Modal";
 import { useNavigate } from "react-router-dom";
@@ -32,7 +28,7 @@ function Home(){
             <a onClick={() => handleOpenModal()}><img className="logo" src={logo} alt="" /></a>
         </header>
 
-        <footer className="pie-pagina">
+        {/* <footer className="pie-pagina">
                 <div className="grupo1">
                     <div className="box">
                         <div className="links"> 
@@ -47,22 +43,6 @@ function Home(){
                         <div className="links"> 
                             <a className="link">Aviso legal</a>
                         </div>
-                    </div>
-                    <div className="redes">
-                        {/* <ul> 
-                            <li>
-                                <a id="youtube"><img src={youtube} alt=""/></a>
-                            </li>
-                            <li>
-                                <a id="twitter"><img src={twitter} alt=""/></a>
-                            </li>
-                            <li>
-                                <a id="instagram"><img src={instagram} alt=""/></a>
-                            </li>
-                            <li>
-                                <a id="facebook"><img src={facebook} alt=""/></a>
-                            </li>                            
-                        </ul> */}
                     </div>
                     <div className="box" id="logos">
                         <div>
@@ -90,7 +70,7 @@ function Home(){
                 <div className="grupo2">
                     <small>&copy; 2023<b> Proyecto vida</b> - Todos los derechos reservados.</small>
                 </div>
-        </footer>
+        </footer> */}
         <Modal estado={modalOpen} setEstado={setmodalOpen}>
         <div className="main">
             <h3>

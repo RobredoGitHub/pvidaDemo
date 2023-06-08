@@ -34,11 +34,11 @@ body{
   cursor: pointer;
   width: 30rem;
 } 
-h1{
+/* h1{
     color: #065739;;
     margin-bottom: inherit;
     text-align: center;
-}
+} */
 /* .main{
   margin-top: 5rem;
   padding: 15px;
@@ -67,9 +67,7 @@ h4{
   margin-block-start: initial;
   margin-block-end: initial;
 }
-span{
-    width: 10px;
-}
+
 
 .flex-container {
     margin-top: 10rem;
@@ -103,14 +101,14 @@ span{
 /* #### Pie de página (footer) #### */
 
 .pie-pagina {
-  display: grid;
+  /* display: grid;
   justify-items: center;
   background-color: #007932;
   font-weight: 400;
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 100%; */
 }
 
 .grupo1 {
@@ -120,6 +118,7 @@ span{
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto auto auto auto;
   grid-gap: 20px;
+  /* width: 100%; */
 }
 
 .links{
@@ -127,7 +126,6 @@ span{
 }
 
 .box {
-  padding: 10px;
   /* background-color: #046b2f; */
   border-radius: 5px;
   /* box-shadow: 0 0 5px #ccc; */
@@ -292,11 +290,6 @@ color: white;
 
 } */
 
-
-
-
-
-
 /* #### Modal #### */
 
 .modalImg img{
@@ -339,11 +332,6 @@ color: white;
   text-align: left;
 }
 
-
-
-
-
-
 /* #### Icons  & Buttons #### */
 
 .icon{
@@ -357,16 +345,61 @@ color: white;
 /* #### Media Queries #### */
 
 @media (max-width: 420px) and (max-height: 920px) {
-body{
-  background-color: white;
-  overflow-x: hidden;
-  font-size: 20px;
-  margin: 0;
-  font-family: 'Noto Sans HK';
+
+  /* ####### Home ####### */
+
+.flex-container{
+  padding-left: initial;
+    margin-top: initial; 
+    margin-bottom: initial; 
+    text-align: center;
+    margin-top: 2rem;
+}
+.flex-container button{
+  width: 15rem;
+  height: 5rem;
+}
+.btn1{
+  margin-right: 6rem;
 }
 h1{
-  font-size: 40px;
+  display: inline;
+  font-size: 50px;
 }
+  .Header img{
+    width: 15rem;
+    margin-top: 1.5rem;
+  }
+  .home{
+    width: 2.5rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+
+  }
+  form{
+    padding: 1rem;
+    font-size: 20px;
+  }
+  .fontSizeButton{
+    display: none;
+  }
+
+  .pie-pagina{
+    position: relative;
+    width: 100%;
+  }
+
+ /* ####### carrusel ####### */
+
+body{
+  background-color: white;
+  height: 100vh;
+  /* overflow-x: hidden; */
+  font-size: 20px;
+  font-family: 'Montserrat';
+}
+
 h3{
   font-size: 20px;
 }
@@ -388,44 +421,73 @@ h3{
 .main{
   margin-top: 0.25rem;
 }
-.btn1{
-  margin-bottom: 5px;
-}
 .flex-container{
   display: flex;
-  padding-left: 4.75rem;
+
 }
-.btn1, .btn2 {
-  width: 100px;
-  height: 100px;
-  border: 3px solid #007932;
+.pie-pagina {
+  /* display: grid;
+  justify-items: center;
+  background-color: #007932;
+  font-weight: 400; */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /* width: 100%; */
 }
+
 .pie-pagina .grupo1 .box figure a img{
     width: 3.5rem;
   }
 
-.pie-pagina .grupo1{
-    padding:  5px;
-    grid-gap: 5px;
-  
-  }
+
 .pie-pagina .grupo1 .box h4{
     margin-top: 15px;
     text-transform: lowercase;
-    margin-bottom: 25px;
     font-size: 8px;
   }
-  #vidaes{
-    width: 3rem;
-  }
-  #uma{
-    margin-right: 2px;
-  }
+
   .pie-pagina .grupo2{
     font-size: 11px;
     background-color: #065739;
     padding: 7px 5px;
     text-align: center;
+  } 
+  .links{
+    padding-top: initial;
+    width: max-content;
+  }
+  
+  .box a {
+    margin-right: initial;
+    font-size: 10px;
+  }
+  #proyecto {
+    width:60px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  #junta {
+    width: 60px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  #uma {
+    width: 60px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  #vidaes {
+    width: 60px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  #logos{
+    margin-left: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
   }
 }
 

@@ -55,7 +55,7 @@ function Manual() {
             </div>
             
         </div>
-        <footer className="pie-pagina">
+        {/* <footer className="pie-pagina">
                 <div className="grupo1">
                     <div className="box">
                         <div className="links"> 
@@ -71,22 +71,7 @@ function Manual() {
                             <a className="link">Aviso legal</a>
                         </div>
                     </div>
-                    <div className="redes">
-                        {/* <ul> 
-                            <li>
-                                <a id="youtube"><img src={youtube} alt=""/></a>
-                            </li>
-                            <li>
-                                <a id="twitter"><img src={twitter} alt=""/></a>
-                            </li>
-                            <li>
-                                <a id="instagram"><img src={instagram} alt=""/></a>
-                            </li>
-                            <li>
-                                <a id="facebook"><img src={facebook} alt=""/></a>
-                            </li>                            
-                        </ul> */}
-                    </div>
+                
                     <div className="box" id="logos">
                         <div>
                             <a href="https://www.vidafp.uma.es/">
@@ -113,7 +98,7 @@ function Manual() {
                 <div className="grupo2">
                     <small>&copy; 2023<b> Proyecto vida</b> - Todos los derechos reservados.</small>
                 </div>
-        </footer>
+        </footer> */}
     </div>     
             
         )

@@ -29,7 +29,10 @@
     font-size: 50px;
 }
 
-
+h3{
+    text-align: center;
+    color: #00305E ;
+}
 .modal1{
     padding: 4rem ;
 }
@@ -48,18 +51,18 @@
     text-decoration: none;
     cursor: pointer;
   }
-  .btn{
+  /* .btn{
     text-align: center;
     margin-top: 3rem;
-  }
-  button{
+  } */
+  /* button{
     width:8rem;
     height: 2.5rem;
   }
   button:hover{
     color: white;
     background-color: #087021;
-  }
+  } */
   .modalImg{
     width: 100%;
   }

@@ -9,7 +9,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    /* height: 100%; */
 }
 
 .Header img{
@@ -49,9 +49,10 @@ img{
     
 }
 h1 {
+    color: #065739;
     margin-top: 2rem;
     margin-bottom: 5rem;
-    font-size: 80px;
+    /* font-size: 80px; */
     text-align: center;
 }
 

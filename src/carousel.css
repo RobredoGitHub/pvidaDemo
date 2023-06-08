@@ -63,13 +63,8 @@ input{
   a:hover{
     color: #2ba137;
   }
-  @media (max-width: 420px) and (max-height: 920px) {
-    body{
-      background-color: white;
-      overflow-x: hidden;
-      margin: 0;
-      font-family: 'Noto Sans HK';
-    }
+  /* @media (max-width: 420px) and (max-height: 920px) {
+    
     .input-wrapper {
       display: inherit;
       align-items: inherit;
@@ -77,6 +72,14 @@ input{
   input{
     margin-left: inherit;
   
+  }
+  .flex-container{
+    padding-left: initial;
+  }
+  .flex-container button{
+    width: 15rem;
+    height: 5rem;
+
   }
     .fieldset-carousel .arrows {
       margin-top: 20px;
@@ -99,5 +102,10 @@ input{
     .fontSizeButton{
       display: none;
     }
+
+    .pie-pagina{
+      position: relative;
+      width: 100%;
     }
-    
+    }
+     */
