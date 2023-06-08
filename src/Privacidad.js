@@ -3,10 +3,10 @@ import { useParams } from 'react-router-dom';
 import "./pages/home.css"
 // import FontSizeButton from './FontSizeButton';
 import { useNavigate } from "react-router-dom";
-import iconF1 from "./img/footer/proyectov.png";
-import iconF2 from "./img/footer/junta.png";
-import iconF3 from "./img/footer/uma.png";
-import iconF4 from "./img/footer/vida.png";
+// import iconF1 from "./img/footer/proyectov.png";
+// import iconF2 from "./img/footer/junta.png";
+// import iconF3 from "./img/footer/uma.png";
+// import iconF4 from "./img/footer/vida.png";
 
 
 
@@ -46,7 +46,7 @@ function Privacidad() {
             </div>
             
         </div>
-        <footer className="pie-pagina">
+        {/* <footer className="pie-pagina">
                 <div className="grupo1">
                     <div className="box">
                         <div className="links"> 
@@ -63,7 +63,7 @@ function Privacidad() {
                         </div>
                     </div>
                     <div className="redes">
-                        {/* <ul> 
+                        <ul> 
                             <li>
                                 <a id="youtube"><img src={youtube} alt=""/></a>
                             </li>
@@ -76,7 +76,7 @@ function Privacidad() {
                             <li>
                                 <a id="facebook"><img src={facebook} alt=""/></a>
                             </li>                            
-                        </ul> */}
+                        </ul>
                     </div>
                     <div className="box" id="logos">
                         <div>
@@ -104,7 +104,7 @@ function Privacidad() {
                 <div className="grupo2">
                     <small>&copy; 2023<b> Proyecto vida</b> - Todos los derechos reservados.</small>
                 </div>
-        </footer>
+        </footer> */}
     </div>     
             
         )
