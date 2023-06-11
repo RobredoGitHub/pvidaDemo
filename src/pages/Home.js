@@ -24,8 +24,8 @@ function Home(){
     return (
     <div>
         <header className='Header'>
-            <h1>BIENVENIDO A</h1>
-            <a onClick={() => handleOpenModal()}><img className="logo" src={logo} alt="" /></a>
+            <h2>BIENVENIDO A</h2>
+            <a onClick={() => handleOpenModal()}><img className="logoHome" src={logo} alt="" /></a>
         </header>
 
         {/* <footer className="pie-pagina">

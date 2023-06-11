@@ -5,15 +5,19 @@ body{
   background-color: white;
   font-size: 20px;
   margin: 0;
-  /* height: 100vh; */
   font-family: 'Montserrat';
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url(../img/fondo.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%; */
 
 }
-
-.Header{
+.logoHome{
+  width: 30rem;
+  transition: 0.5s;
+  margin: auto;
+  display: block;
+}
+.logoHome:hover{
+  width: 35rem;
+}
+/* .Header{
     text-align: center;
     display: flex;
     justify-content: center;
@@ -22,27 +26,19 @@ body{
     margin-left: auto;
     margin-right: auto;
     width: 75%;
-}
-.Header img{
+} */ 
+/* .Header img{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 3rem;
     transition: 0.5s;
-}
+} */
 
 .logo:hover{
   cursor: pointer;
   width: 30rem;
 } 
-/* h1{
-    color: #065739;;
-    margin-bottom: inherit;
-    text-align: center;
-} */
-/* .main{
-  margin-top: 5rem;
-  padding: 15px;
-} */
+
 #container {
   display: flex;
   justify-content: center;
@@ -51,6 +47,21 @@ body{
 }
 
 #centered-text {
+  text-align: center;
+}
+h1 {
+  color: #065739;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  font-size: 80px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 50px;
+  color:#087021;
+  margin-top: 5rem;
+  margin-bottom: 7rem;
   text-align: center;
 }
 
@@ -99,17 +110,17 @@ h4{
   }
 
 /* #### Pie de página (footer) #### */
-
+/* 
 .pie-pagina {
-  /* display: grid;
+  display: grid;
   justify-items: center;
   background-color: #007932;
   font-weight: 400;
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%; */
-}
+  width: 100%; 
+} */
 
 .grupo1 {
   height: 18vh;
@@ -227,68 +238,13 @@ h4{
 strong{
   font-weight: 600;
 }
-/* 
-a{
-text-decoration: none;
-color: white;
+/* #### Carrusel #### */
 
-}
-
-
-.pie-pagina .grupo1{
-  width: 100%;
-  max-width: 1200px;
+.logoVida{
+  width: 25rem;
   margin: auto;
-  display: grid;
-  grid-template-columns: repeat(4, 20fr);
-  grid-gap: 10px;
-  padding: 55px 0px;
-  margin-top: inherit;
-
+  display: block;
 }
-.pie-pagina .grupo1 .box figure{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: inherit;
-  margin-block-start: inherit;
-  margin-block-end: inherit;
-  margin-block-end: inherit;
-  margin-inline-start: inherit;
-  margin-inline-end: inherit;
-}.pie-pagina .grupo1 .box figure a img{
-  width: 8rem;
-}
-.pie-pagina .grupo1 .box h4{
-  margin-bottom: 25px;
-  font-size: 20px;
-}
-.pie-pagina .grupo1 .box p{
-  margin-bottom: 10px;
-}
-.pie-pagina .grupo1 .red-social a{
-  display: inline-block;
-  text-decoration: none;
-  width: 45px;
-  height: 45px;
-  line-height: 45px;
-  color: white;
-  margin-right: 10px;
-  background-color: #074c8b;
-  text-align: center;
-  transition: all 300ms ease;
-}
-.pie-pagina .grupo1 .red-social a:hover{
-  color: #00ACC8;
-}
-.pie-pagina p{
-  margin-top: inherit;
-  margin-bottom: inherit;
-}
-
-} */
 
 /* #### Modal #### */
 
@@ -363,13 +319,13 @@ color: white;
   margin-right: 6rem;
 }
 h1{
-  display: inline;
-  font-size: 50px;
+  font-size: 40px;
+  margin-bottom: 1rem;
 }
-  .Header img{
+  /* .Header img{
     width: 15rem;
     margin-top: 1.5rem;
-  }
+  } */
   .home{
     width: 2.5rem;
     position: absolute;
@@ -413,7 +369,7 @@ h3{
 } */
 
 .Header img{
-
+  width: 1px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1rem;

@@ -21,17 +21,16 @@
     max-width: 40rem;
     width: 80%; /* Could be more or less, depending on screen size */
   }
-  h2{
+  /* h2{
     margin-top: 1rem;
     margin-bottom: 2rem;
-    text-align: center;
+    color:#087021;
     color:#087021;
     font-size: 50px;
-}
+} */
 
 h3{
     text-align: center;
-    color: #00305E ;
 }
 .modal1{
     padding: 4rem ;
@@ -51,18 +50,19 @@ h3{
     text-decoration: none;
     cursor: pointer;
   }
-  /* .btn{
+  .btn{
     text-align: center;
     margin-top: 3rem;
-  } */
-  /* button{
+  }
+  button{
     width:8rem;
     height: 2.5rem;
+    border-radius: 7%;
   }
   button:hover{
     color: white;
     background-color: #087021;
-  } */
+  }
   .modalImg{
     width: 100%;
   }

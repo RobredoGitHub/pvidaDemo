@@ -101,7 +101,7 @@ const handleNext = () => {
 
     <div className="fieldset-carousel">
       <header className='Header'>
-        <img  src={logo} alt="img" />
+        <img  src={logo} className="logoVida" alt="logoVida" />
       </header>
       <form className='form'>
         <fieldset>
