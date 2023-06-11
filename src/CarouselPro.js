@@ -80,8 +80,8 @@ const navigate = useNavigate();
 
     <div className="fieldset-carousel">
       <header className='Header'>
-      <img  src={logo} alt="img" />
-                </header>
+        <a onClick={() => navigate("/") }><img  src={logo} className="logoVida" alt="logoVida" /></a>
+      </header>
       <form>
         <fieldset>
         { ListPro[estado](form, setForm)}
@@ -94,7 +94,7 @@ const navigate = useNavigate();
       <div className='submitDiv'>
         <button onClick={() => calculate(form)} className='button'>Calcular</button>
       </div>
-      <a><img onClick={() => navigate("/")} className="home" src={require('./img/iconos/hogar.png')} alt="" /></a>
+      {/* <a><img onClick={() => navigate("/")} className="home" src={require('./img/iconos/hogar.png')} alt="" /></a> */}
       <FontSizeButton/>   
     </div>
                 

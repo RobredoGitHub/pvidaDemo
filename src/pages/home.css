@@ -14,9 +14,9 @@ body{
   margin: auto;
   display: block;
 }
-.logoHome:hover{
+/* .logoHome:hover{
   width: 35rem;
-}
+} */
 /* .Header{
     text-align: center;
     display: flex;
@@ -82,7 +82,6 @@ h4{
 
 .flex-container {
     margin-top: 10rem;
-    margin-bottom: 25rem;
     text-align: center;
 }
   
@@ -257,7 +256,7 @@ strong{
 /* #### Manual #### */
 
 .manual-main{
-  width: 50%;
+  width: 70%;
   height: 100vh; /* Ajusta esto según tus necesidades */
 
   margin: 0 auto 7rem;
@@ -268,7 +267,7 @@ strong{
 }
 
 .Cookies-main{
-  width: 50%;
+  width: 70%;
   height: 100vh; /* Ajusta esto según tus necesidades */
 
   margin: 0 auto 7rem;
@@ -278,7 +277,7 @@ strong{
   text-align: left;
 }
 .Privacidad-main{
-  width: 50%;
+  width:70%;
   height: 100vh; /* Ajusta esto según tus necesidades */
 
   margin: 0 auto 7rem;
@@ -311,26 +310,24 @@ strong{
     text-align: center;
     margin-top: 2rem;
 }
-.flex-container button{
-  width: 15rem;
-  height: 5rem;
-}
-.btn1{
-  margin-right: 6rem;
-}
-h1{
-  font-size: 40px;
+
+.logoHome{
+  width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 1rem;
 }
+
   /* .Header img{
     width: 15rem;
     margin-top: 1.5rem;
   } */
   .home{
-    width: 2.5rem;
+    /* width: 2.5rem;
     position: absolute;
     top: 1rem;
-    left: 1rem;
+    left: 1rem; */
+    display: none;
 
   }
   form{
@@ -346,6 +343,30 @@ h1{
     width: 100%;
   }
 
+  /* #### Manual #### */
+
+  .manual-main{
+    width: 80%;
+  }
+  .manual-main h3{
+  margin-bottom: 1.5rem ;
+  }
+
+  /* ####### modal ####### */
+
+  .flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+  .btn1, .btn2{
+    font-size: 14px;
+    min-width: 8rem;
+  }
+
+
  /* ####### carrusel ####### */
 
 body{
@@ -354,6 +375,17 @@ body{
   /* overflow-x: hidden; */
   font-size: 20px;
   font-family: 'Montserrat';
+}
+
+.logoVida{
+  width: 20rem;
+  margin: 3rem auto 1rem auto;
+}
+h1{
+  font-size: 40px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+
 }
 
 h3{
@@ -368,19 +400,11 @@ h3{
 
 } */
 
-.Header img{
-  width: 1px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1rem;
-}
+
 .main{
   margin-top: 0.25rem;
 }
-.flex-container{
-  display: flex;
 
-}
 .pie-pagina {
   /* display: grid;
   justify-items: center;
