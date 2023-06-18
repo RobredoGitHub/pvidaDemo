@@ -2,10 +2,10 @@ import React from "react";
 import "./home.css";
 import logo from "../img/logo.png";
 // import vida from "../img/footer/Logo-Proyecto-Vida.png";
-// import iconF1 from "../img/footer/proyectov.png";
-// import iconF2 from "../img/footer/junta.png";
-// import iconF3 from "../img/footer/uma.png";
-// import iconF4 from "../img/footer/vida.png";
+import iconF1 from "../img/footer/proyectov.png";
+import iconF2 from "../img/footer/junta.png";
+import iconF3 from "../img/footer/uma.png";
+import iconF4 from "../img/footer/vida.png";
 import  { useState } from 'react';
 import Modal from "../Modal";
 import { useNavigate } from "react-router-dom";
@@ -28,17 +28,17 @@ function Home(){
             <a onClick={() => handleOpenModal()}><img className="logoHome" src={logo} alt="" /></a>
         </header>
 
-        {/* <footer className="pie-pagina">
+        <footer className="pie-pagina">
                 <div className="grupo1">
                     <div className="box">
                         <div className="links"> 
-                            <a className="link" onClick={() => navigate("./manual-de-uso")}>Manual de uso del usuario</a>
+                            <a className="link" >Manual de uso del usuario</a>
                         </div>
                         <div className="links"> 
-                            <a className="link" onClick={() => navigate("./politica-de-privacidad")}>Política de privacidad</a>
+                            <a className="link" >Política de privacidad</a>
                         </div>
                         <div className="links"> 
-                            <a className="link" onClick={() => navigate("./politica-de-cookies")}>Política de cookies</a>
+                            <a className="link" >Política de cookies</a>
                         </div>
                         <div className="links"> 
                             <a className="link">Aviso legal</a>
@@ -70,7 +70,7 @@ function Home(){
                 <div className="grupo2">
                     <small>&copy; 2023<b> Proyecto vida</b> - Todos los derechos reservados.</small>
                 </div>
-        </footer> */}
+        </footer>
         <Modal estado={modalOpen} setEstado={setmodalOpen}>
         <div className="main">
             <h3>

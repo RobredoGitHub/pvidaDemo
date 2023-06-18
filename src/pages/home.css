@@ -79,7 +79,9 @@ h4{
   margin-block-end: initial;
 }
 
-
+a:hover{
+  cursor: pointer;
+}
 .flex-container {
     margin-top: 10rem;
     text-align: center;
@@ -109,28 +111,31 @@ h4{
   }
 
 /* #### Pie de página (footer) #### */
-/* 
+
 .pie-pagina {
   display: grid;
   justify-items: center;
   background-color: #007932;
   font-weight: 400;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
-  width: 100%; 
-} */
+  width: 100%;  
+}
 
 .grupo1 {
   height: 18vh;
-  padding: 30px;
+  padding: 5px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto auto auto auto;
   grid-gap: 20px;
-  /* width: 100%; */
+  width: 100%;
 }
 
+.grupo1 .box{
+  padding: 1rem;
+}
 .links{
   padding-top: 1rem;
 }
@@ -205,10 +210,8 @@ li a {
 }
 
 #logos{
-  margin-left: 5rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 15px;
+  display: flex;
+  align-items: center;
 }
 #redes{
   text-align: center;
@@ -228,10 +231,6 @@ h4{
 
 .link:hover{
   color: white;
-}
-
-#logos{
-  padding-top: 2rem;
 }
 
 strong{
@@ -257,7 +256,7 @@ strong{
 
 .manual-main{
   width: 70%;
-  height: 100vh; /* Ajusta esto según tus necesidades */
+  height: 90vh; /* Ajusta esto según tus necesidades */
 
   margin: 0 auto 7rem;
 }
@@ -287,6 +286,17 @@ strong{
   text-align: left;
 }
 
+/* #### Footer 2 #### */
+
+.footer2 .grupo1{
+  background-color: #007932;
+}
+
+.footer2 .grupo2{
+  background-color: #065739;
+  padding: 15px 10px;
+  text-align: center;
+}
 /* #### Icons  & Buttons #### */
 
 .icon{
@@ -338,15 +348,16 @@ strong{
     display: none;
   }
 
-  .pie-pagina{
+  /* .pie-pagina{
     position: relative;
     width: 100%;
-  }
+  } */
 
   /* #### Manual #### */
 
   .manual-main{
     width: 80%;
+    height: initial; /* Ajusta esto según tus necesidades */
   }
   .manual-main h3{
   margin-bottom: 1.5rem ;
@@ -373,6 +384,7 @@ body{
   background-color: white;
   height: 100vh;
   /* overflow-x: hidden; */
+  overflow-y: hidden;
   font-size: 20px;
   font-family: 'Montserrat';
 }
@@ -404,17 +416,27 @@ h3{
 .main{
   margin-top: 0.25rem;
 }
-
+/* 
 .pie-pagina {
-  /* display: grid;
+  display: grid;
   justify-items: center;
   background-color: #007932;
-  font-weight: 400; */
+  font-weight: 400;
   position: absolute;
   bottom: 0;
   left: 0;
-  /* width: 100%; */
+  width: 100%;
+} */
+
+.pie-pagina{
+  font-size: 10px;
 }
+
+.pie-pagina .grupo1{
+  height: 5rem;
+  padding: 0 0 1rem 0;
+}
+
 
 .pie-pagina .grupo1 .box figure a img{
     width: 3.5rem;
@@ -434,7 +456,7 @@ h3{
     text-align: center;
   } 
   .links{
-    padding-top: initial;
+    padding: 1.5px;
     width: max-content;
   }
   
@@ -443,18 +465,18 @@ h3{
     font-size: 10px;
   }
   #proyecto {
-    width:60px;
-    height: 20px;
+    width: 60px;
+    height: 25px;
     margin-right: 10px;
   }
   #junta {
     width: 60px;
-    height: 20px;
+    height: 33.33px;
     margin-right: 10px;
   }
   #uma {
     width: 60px;
-    height: 20px;
+    height: 25px;
     margin-right: 10px;
   }
   #vidaes {
@@ -464,12 +486,33 @@ h3{
   }
   
   #logos{
-    margin-left: 5rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 15px;
+    grid-gap: 5px;
   }
+
+  /* ####### Manual de uso ####### */
+
+
+
+.manual-container{
+height: max-content;
 }
+
+/* 
+.footer2 .grupo1{
+  height: 5rem;
+} */
+
+.footer2 .grupo2{
+  font-size: 11px;
+  padding: 7px 5px;
+  text-align: center;
+  width: 100%;
+}
+}
+
+
 
 /* ####### Resultado ####### */
 

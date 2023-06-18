@@ -63,49 +63,4 @@ input{
   a:hover{
     color: #2ba137;
   }
-  /* @media (max-width: 420px) and (max-height: 920px) {
-    
-    .input-wrapper {
-      display: inherit;
-      align-items: inherit;
-    }
-  input{
-    margin-left: inherit;
   
-  }
-  .flex-container{
-    padding-left: initial;
-  }
-  .flex-container button{
-    width: 15rem;
-    height: 5rem;
-
-  }
-    .fieldset-carousel .arrows {
-      margin-top: 20px;
-  }
-    .Header img{
-      width: 15rem;
-      margin-top: 1.5rem;
-    }
-    .home{
-      width: 2.5rem;
-      position: absolute;
-      top: 1rem;
-      left: 1rem;
-
-    }
-    form{
-      padding: 1rem;
-      font-size: 20px;
-    }
-    .fontSizeButton{
-      display: none;
-    }
-
-    .pie-pagina{
-      position: relative;
-      width: 100%;
-    }
-    }
-     */

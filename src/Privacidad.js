@@ -3,10 +3,10 @@ import { useParams } from 'react-router-dom';
 import "./pages/home.css"
 // import FontSizeButton from './FontSizeButton';
 import { useNavigate } from "react-router-dom";
-// import iconF1 from "./img/footer/proyectov.png";
-// import iconF2 from "./img/footer/junta.png";
-// import iconF3 from "./img/footer/uma.png";
-// import iconF4 from "./img/footer/vida.png";
+import iconF1 from "./img/footer/proyectov.png";
+import iconF2 from "./img/footer/junta.png";
+import iconF3 from "./img/footer/uma.png";
+import iconF4 from "./img/footer/vida.png";
 
 
 
@@ -46,38 +46,23 @@ function Privacidad() {
             </div>
             
         </div>
-        {/* <footer className="pie-pagina">
+        <footer className="footer2">
                 <div className="grupo1">
                     <div className="box">
                         <div className="links"> 
-                            <a className="link" onClick={() => navigate("./manual-de-uso")}>Manual de uso del usuario</a>
+                            <a className="link" onClick={() => navigate("/manual-de-uso")}>Manual de uso del usuario</a>
                         </div>
                         <div className="links"> 
-                            <a className="link" onClick={() => navigate("./politica-de-privacidad")}>Política de privacidad</a>
+                            <a className="link" onClick={() => navigate("/politica-de-privacidad")}>Política de privacidad</a>
                         </div>
                         <div className="links"> 
-                            <a className="link" onClick={() => navigate("./politica-de-cookies")}>Política de cookies</a>
+                            <a className="link" onClick={() => navigate("/politica-de-cookies")}>Política de cookies</a>
                         </div>
                         <div className="links"> 
                             <a className="link">Aviso legal</a>
                         </div>
                     </div>
-                    <div className="redes">
-                        <ul> 
-                            <li>
-                                <a id="youtube"><img src={youtube} alt=""/></a>
-                            </li>
-                            <li>
-                                <a id="twitter"><img src={twitter} alt=""/></a>
-                            </li>
-                            <li>
-                                <a id="instagram"><img src={instagram} alt=""/></a>
-                            </li>
-                            <li>
-                                <a id="facebook"><img src={facebook} alt=""/></a>
-                            </li>                            
-                        </ul>
-                    </div>
+                
                     <div className="box" id="logos">
                         <div>
                             <a href="https://www.vidafp.uma.es/">
@@ -104,7 +89,7 @@ function Privacidad() {
                 <div className="grupo2">
                     <small>&copy; 2023<b> Proyecto vida</b> - Todos los derechos reservados.</small>
                 </div>
-        </footer> */}
+        </footer>
     </div>     
             
         )
