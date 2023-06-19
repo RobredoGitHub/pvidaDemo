@@ -23,11 +23,12 @@ function Home(){
     
     return (
     <div>
-        <header className='Header'>
-            <h2>BIENVENIDO A</h2>
-            <a onClick={() => handleOpenModal()}><img className="logoHome" src={logo} alt="" /></a>
-        </header>
-
+        <div className=".wrapp">
+            <header className='Header'>
+                <h2>BIENVENIDO A</h2>
+                <a onClick={() => handleOpenModal()}><img className="logoHome" src={logo} alt="" /></a>
+            </header>
+        </div>
         <footer className="pie-pagina">
                 <div className="grupo1">
                     <div className="box">

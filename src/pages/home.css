@@ -3,6 +3,9 @@
 
 body{
   background-color: white;
+  height: 100%;
+  margin: 0;
+  padding: 0;
   font-size: 20px;
   margin: 0;
   font-family: 'Montserrat';
@@ -17,16 +20,19 @@ body{
 /* .logoHome:hover{
   width: 35rem;
 } */
-/* .Header{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-    width: 75%;
-} */ 
+.wrapp{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.Header{
+  /* margin-bottom: 10rem; */
+  flex: 1;
+  padding-bottom: 500px; /* Adjust the value (50px) to match the height of your footer */
+  box-sizing: border-box;
+
+} 
 /* .Header img{
     margin-left: auto;
     margin-right: auto;
@@ -117,9 +123,10 @@ a:hover{
   justify-items: center;
   background-color: #007932;
   font-weight: 400;
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  height: 280px;
+  /* position: fixed; */
+  /* bottom: 0;
+  left: 0; */
   width: 100%;  
 }
 
@@ -313,6 +320,10 @@ strong{
 
   /* ####### Home ####### */
 
+.Header{
+  padding-bottom: 360px;
+}
+
 .flex-container{
   padding-left: initial;
     margin-top: initial; 
@@ -384,7 +395,7 @@ body{
   background-color: white;
   height: 100vh;
   /* overflow-x: hidden; */
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
   font-size: 20px;
   font-family: 'Montserrat';
 }
@@ -430,6 +441,7 @@ h3{
 
 .pie-pagina{
   font-size: 10px;
+  height: initial;
 }
 
 .pie-pagina .grupo1{
