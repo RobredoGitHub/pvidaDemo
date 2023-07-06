@@ -116,7 +116,7 @@ const handleNext = () => {
       <div className='submitDiv'>
         <button onClick={() => calculate(form)} className='button'>Calcular</button>
       </div>
-      {/* <a><img onClick={() => navigate("/") } className="home" src={require('./img/iconos/hogar.png')} alt="img" /></a> */}
+      <a><img onClick={() => navigate("/") } className="home" src={require('./img/iconos/hogar.png')} alt="img" /></a>
       <FontSizeButton/>
       <Modal estado={modalOpen1} setEstado={setmodalOpen1}>
         <a><img className="modalImg" src={require('./img/diametroLibre.jpg')} alt="" /></a>

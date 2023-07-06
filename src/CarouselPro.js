@@ -94,7 +94,7 @@ const navigate = useNavigate();
       <div className='submitDiv'>
         <button onClick={() => calculate(form)} className='button'>Calcular</button>
       </div>
-      {/* <a><img onClick={() => navigate("/")} className="home" src={require('./img/iconos/hogar.png')} alt="" /></a> */}
+      <a><img onClick={() => navigate("/")} className="home" src={require('./img/iconos/hogar.png')} alt="" /></a>
       <FontSizeButton/>   
     </div>
                 
