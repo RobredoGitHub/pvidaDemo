@@ -33,6 +33,9 @@ body{
   box-sizing: border-box;
 
 } 
+.header{
+  padding-bottom: 100px;
+}
 /* .Header img{
     margin-left: auto;
     margin-right: auto;

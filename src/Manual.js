@@ -24,28 +24,25 @@ function Manual() {
             <div className="manual-main">
                 <p className="manual-p">¡Bienvenido a la aplicación de medidas para adaptar tu hogar! Esta aplicación ha sido diseñada para ayudarte a determinar el porcentaje de adaptabilidad de tu hogar a personas con movilidad reducida. A continuación, te ofrecemos una guía paso a paso para que puedas utilizar la aplicación de manera efectiva.</p>
                 <br></br>
+                <h3>Comenzando el Cuestionario</h3>
+                <p className="manual-p">Una vez que hayas completado la configuración, la aplicación te llevará a la pantalla principal, donde podrás comenzar a responder las preguntas del cuestionario. Para hacerlo, utiliza el carrusel de preguntas que aparece en pantalla.</p>
+                <br></br> 
                 <h3>Navegación</h3>
                 <p className="manual-p">
                 el formulario funciona como un carrusel que muestra preguntas relacionadas con diferentes del hogar, para moverte entre las preguntas dispondrá de dos flechas apuntando hacia la izquierda y derecha, solo debes hacer click sobre ellas. </p>
-                <br></br>
-                <h3>Comenzando el Cuestionario</h3>
-                <p className="manual-p">Una vez que hayas completado la configuración, la aplicación te llevará a la pantalla principal, donde podrás comenzar a responder las preguntas del cuestionario. Para hacerlo, utiliza el carrusel de preguntas que aparece en pantalla.</p>
                 <br></br>
                 <h3>Responder las Preguntas</h3>
                 <p className="manual-p">Cada pregunta del cuestionario se refiere a una zona diferente de tu hogar. Deberás responder cada una de ellas proporcionando medidas específicas. Es importante que las medidas sean precisas para que la aplicación pueda calcular con exactitud el porcentaje de adaptabilidad de tu hogar.</p>
                 <br></br>
                 <h3>Visualización de Resultados</h3>
-                <p className="manual-p">Una vez que hayas respondido todas las preguntas, la aplicación te proporcionará el porcentaje de adaptabilidad de tu hogar. Además, podrás visualizar un gráfico que muestra en qué áreas de tu hogar debes mejorar la accesibilidad.</p>
-                <br></br>
-                <h3>Compartir Resultados</h3>
-                <p className="manual-p">Si lo deseas, puedes compartir los resultados de la aplicación con familiares o amigos. Para hacerlo, utiliza la función de compartir que se encuentra en la pantalla de resultados.</p>
+                <p className="manual-p">Una vez que hayas respondido todas las preguntas, la aplicación te proporcionará el porcentaje de adaptabilidad de tu hogar. Esta pantalla incluir un botón en la parte superior izquierda con el icono de una casa desde el que podrás volver a la pantalla principal.</p>
                 <br></br>
                 <h3>Actualizar Datos</h3>
-                <p className="manual-p">Si necesitas actualizar los datos que has proporcionado en el cuestionario, podrás hacerlo desde la pantalla principal de la aplicación.</p>
+                <p className="manual-p">Si necesitas actualizar los datos que has proporcionado en el cuestionario siempre podrás volver a la pregunta anterior utilizando las flechas de dirección.</p>
                 <br></br>
                 <h3>Conclusión</h3>
                 <p className="manual-p">La aplicación de medidas para adaptar tu hogar es una herramienta útil y fácil de usar que te ayudará a determinar el porcentaje de adaptabilidad de tu hogar a personas con movilidad reducida. Sigue estos simples pasos y podrás utilizar la aplicación de manera efectiva y obtener resultados precisos.</p>
-    {/* <a><img onClick={() => navigate("/") } className="home" src={require('./img/iconos/hogar.png')} alt="img" /></a> */}
+    <a><img onClick={() => navigate("/") } className="home" src={require('./img/iconos/hogar.png')} alt="img" /></a>
             </div>
             
         </div>

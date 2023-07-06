@@ -79,7 +79,7 @@ const navigate = useNavigate();
   return (
 
     <div className="fieldset-carousel">
-      <header className='Header'>
+      <header className='header'>
         <a onClick={() => navigate("/") }><img  src={logo} className="logoVida" alt="logoVida" /></a>
       </header>
       <form>

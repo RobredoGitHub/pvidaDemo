@@ -33,13 +33,13 @@ function Home(){
                 <div className="grupo1">
                     <div className="box">
                         <div className="links"> 
-                            <a className="link" >Manual de uso del usuario</a>
+                            <a onClick={() => navigate("/manual-de-uso")} className="link" >Manual de uso del usuario</a>
                         </div>
                         <div className="links"> 
-                            <a className="link" >Política de privacidad</a>
+                            <a onClick={() => navigate("/politica-de-privacidad")} className="link" >Política de privacidad</a>
                         </div>
                         <div className="links"> 
-                            <a className="link" >Política de cookies</a>
+                            <a onClick={() => navigate("/politica-de-cookies")} className="link" >Política de cookies</a>
                         </div>
                         <div className="links"> 
                             <a className="link">Aviso legal</a>

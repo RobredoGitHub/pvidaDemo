@@ -19,29 +19,29 @@ function Cookies() {
 
     return (
     <div>   
-        <div className="Cookies-container">
+        <div className="manual-container">
             <h2>Política de cookies</h2>
             <br></br>
-            <div className="Cookies-main">
-                <p className="Cookies-p">Esta política de cookies explica cómo [Nombre de la página web] ("nosotros", "nuestro" o "nos") utiliza cookies y tecnologías similares cuando visitas nuestro sitio web relacionado con la adaptación del hogar a personas con movilidad reducida (en adelante, "el Sitio").</p>
+            <div className="manual-main">
+                <p className="manual-p">Esta política de cookies explica cómo [Nombre de la página web] ("nosotros", "nuestro" o "nos") utiliza cookies y tecnologías similares cuando visitas nuestro sitio web relacionado con la adaptación del hogar a personas con movilidad reducida (en adelante, "el Sitio").</p>
                 <br></br>
                 <h3>¿Qué son las cookies?</h3>
-                <p className="Cookies-p">
+                <p className="manual-p">
                 Las cookies son pequeños archivos de texto que se almacenan en tu dispositivo cuando visitas un sitio web. Estas cookies ayudan a mejorar tu experiencia de navegación al recordar tus preferencias y proporcionar información anónima sobre cómo interactúas con el Sitio.</p>
                 <br></br>
                 <h3>¿Qué tipos de cookies utilizamos?</h3>
-                <p className="Cookies-p">
+                <p className="manual-p">
                 Una vez que hayas completado la configuración, la aplicación te llevará a la pantalla principal, donde podrás comenzar a responder las preguntas del cuestionario. Para hacerlo, utiliza el carrusel de preguntas que aparece en pantalla.</p>
                 <br></br>
                 <h3>¿Cómo puedes controlar las cookies?</h3>
-                <p className="Cookies-p">
+                <p className="manual-p">
                 Puedes controlar y administrar las cookies en tu navegador web. La mayoría de los navegadores te permiten configurar tus preferencias de cookies a través de la configuración del navegador. Ten en cuenta que si optas por desactivar o eliminar ciertas cookies, es posible que algunas funciones del Sitio no estén disponibles o que tu experiencia de navegación se vea afectada.</p>
                 <br></br>
                 <h3>Cambios en nuestra política de cookies</h3>
-                <p className="Cookies-p">
+                <p className="manual-p">
                 Nos reservamos el derecho de actualizar esta política de cookies en cualquier momento. Cualquier cambio que realicemos se publicará en esta página con una fecha de actualización revisada. Te recomendamos que revises periódicamente esta política para estar informado sobre cómo utilizamos las cookies.</p>
                 <br></br>
-                <p className="Cookies-p">
+                <p className="manual-p">
                 Además de las opciones de configuración del navegador, también puedes utilizar herramientas de terceros para controlar las cookies, como las opciones de privacidad disponibles en algunos navegadores o herramientas de bloqueo de cookies.</p>
     <a><img onClick={() => navigate("/") } className="home" src={require('./img/iconos/hogar.png')} alt="img" /></a>
             </div>
