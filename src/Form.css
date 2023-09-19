@@ -1,39 +1,35 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-
 
 /* span{
     width: 10px;
 } */
-.document{
+.document {
     padding-top: 1rem;
     margin-left: auto;
     margin-right: auto;
     width: 85%;
 }
-p{
+p {
     margin-top: 5px;
     margin-bottom: 5px;
 }
-input{
+input {
     height: 20px;
 }
-.checkbox{
-    width: 20px;;
-  }
+.checkbox {
+    width: 20px;
+}
 .clear-both {
     clear: both;
-  }
+}
 
-
-.img{
+.img {
     margin-top: 1.5rem;
     text-align: left;
     border: 3px solid #368f3f;
     width: 50rem;
     border-radius: 5%;
 }
-
 
 h3 {
     margin-top: 5px;
@@ -50,32 +46,31 @@ h3 {
     border-radius: 7px;
 } */
 legend {
-
     font-weight: bold;
 }
 
-.img{
+.img {
     margin-left: 15px;
 }
 
-.img{
+.img {
     width: 35rem;
 }
-.submitDiv{
+.submitDiv {
     margin-top: 5rem;
     margin-bottom: 3rem;
     text-align: center;
 }
-.submitDiv button{
+.submitDiv button {
     color: black;
     width: 10rem;
     height: 3rem;
     margin-bottom: 2rem;
 }
-.submitDiv button:hover{
+.submitDiv button:hover {
     cursor: pointer;
 }
-.home{
+.home {
     width: 60px;
     position: absolute;
     top: 3rem;

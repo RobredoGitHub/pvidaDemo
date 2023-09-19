@@ -1,0 +1,88 @@
+{
+    "vestibulo": {
+        "Name": "Vestibulo",
+        "introduction": "Introduzca en centímetros el diámetro de la circunferencia despejada de mayor tamaño que puede caber dentro del espacio de vestíbulo o entrada de la vivienda, estando todas las puertas abiertas.",
+        "question": "1. Ancho libre (cm)",
+        "image": "Click aquí para ver la imagen"
+    },
+    "pasillos": {
+        "Name": "Pasillos",
+        "introduction": "Importante: En lo referente al pasillo nos interesa prestar atención al ancho libre del mismo, es decir, al espacio despejado para caminar a través de él. El pasillo puede ser de dos formas:",
+        "advisory": "    - Misma anchura (espacio despejado de paso) a largo de todo el pasillo, es decir, el ancho del pasillo no varía en ningún momento.",
+        "advisory1": "    - O por el contrario, sufrir algún tipo estrechamiento en ciertos puntos (estrechamiento puntual), como puede ser un pilar, un elemento de la pared, un mueble, etc; en dicho punto el pasillo pasa a tener un espacio despejado de paso de menor tamaño.",
+        "advisory2": "En caso de su pasillo disponga de la misma anchura a lo largo del mismo indique la anchura a continuación",
+        "question": "2. Ancho libre (cm)"
+    },
+    "pasillos2": {
+        "Name": "Pasillos",
+        "introduction": "Importante: En lo referente al pasillo nos interesa prestar atención al ancho libre del mismo, es decir, al espacio despejado para caminar a través de él. El pasillo puede ser de dos formas:",
+        "advisory": "    - Misma anchura (espacio despejado de paso) a largo de todo el pasillo, es decir, el ancho del pasillo no varía en ningún momento.",
+        "advisory1": "   - O por el contrario, sufrir algún tipo estrechamiento en ciertos puntos (estrechamiento puntual), como puede ser un pilar, un elemento de la pared, un mueble, etc; en dicho punto el pasillo pasa a tener un espacio despejado de paso de menor tamaño.",
+        "advisory2": "En caso de que exista un estrechamiento puntual (como por ejemplo un pilar):",
+        "question": "3. Indique por la anchura general del pasillo sin contar el pilar (cm)",
+        "question1": "4. La anchura del pilar, en este caso (cm)",
+        "question2": "5. El ancho del pasillo en ese punto (cm)",
+        "image": "Click aquí para ver la imagen"
+    },
+    "pasillos3": {
+        "Name": "Pasillos",
+        "introduction": "Importante: En lo referente al pasillo nos interesa prestar atención al ancho libre del mismo, es decir, al espacio despejado para caminar a través de él. El pasillo puede ser de dos formas:",
+        "advisory": "    - Misma anchura (espacio despejado de paso) a largo de todo el pasillo, es decir, el ancho del pasillo no varía en ningún momento.",
+        "advisory1": "   - O por el contrario, sufrir algún tipo estrechamiento en ciertos puntos (estrechamiento puntual), como puede ser un pilar, un elemento de la pared, un mueble, etc; en dicho punto el pasillo pasa a tener un espacio despejado de paso de menor tamaño.",
+        "advisory2": "En caso de que su pasillo tenga una longitud de 10 metros o más, indique por favor su anchura en centímetros",
+        "question": "6. Anchura libre"
+    },
+    "huecos": {
+        "Name": "Huecos de paso",
+        "introduction": "Con la puerta de entrada a la vivienda totalmente abierta, mida en centímetros el ancho del hueco que queda para pasar a través de ella.",
+        "question": "7. Ancho libre",
+        "image": "Click aquí para ver la imagen"
+    },
+    "huecos1": {
+        "Name": "Huecos de paso",
+        "introduction": "Introduzca en centímetros el diámetro de la circunferencia despejada de mayor tamaño que puede caber a ambos lados de la puerta de entrada de la vivienda.",
+        "question": "8. Diametro",
+        "image": "Click aquí para ver la imagen"
+    },
+    "puertas": {
+        "Name": "Puertas",
+        "introduction": "Importante: En esta sección deberá tomar medidas de los espacios cercanos a las puertas que acceden a las diferentes habitaciones de su hogar.",
+        "advisory": "Si las puertas que dan acceso a las habitaciones de su hogar pueden abrirse 90º o más (hastaformar una L o más), marque esta casilla.",
+        "question": "9."
+    },
+    "puertas1": {
+        "Name": "Puertas",
+        "introduction": "Importante: En esta sección deberá tomar medidas de los espacios cercanos a las puertas que acceden a las diferentes habitaciones de su hogar.",
+        "advisory": "Indique en centímetros la distancia vertical entre el pomo de la puerta y el suelo, es decir, la altura a la que se encuentra el pomo.",
+        "question": "10. Altura del pomo.",
+        "image": "Click aquí para ver la imagen"
+    },
+    "puertas2": {
+        "Name": "Puertas",
+        "introduction": "Importante: En esta sección deberá tomar medidas de los espacios cercanos a las puertas que acceden a las diferentes habitaciones de su hogar.",
+        "advisory": "En caso de que su hogar tenga puertas acristaladas o ventanales y sobre el vidrio exista algún vinilo o pegatina de señalización, rellene estos apartados:",
+        "question": "11. Anchura de la señalización",
+        "image": "Click aquí para ver la imagen"
+    },
+    "puertas3": {
+        "Name": "Puertas",
+        "introduction": "Importante: En esta sección deberá tomar medidas de los espacios cercanos a las puertas que acceden a las diferentes habitaciones de su hogar.",
+        "advisory": "En caso de que en su hogar tenga puertas de apertura automática, rellene estos apartados:",
+        "advisory1": "Mida en centímetros el ancho del hueco que queda para pasar a través de ella.",
+        "question": "12. Ancho libre",
+        "advisory3": "Indique en segundos el tiempo estimado que transcurre entre que se abre y se vuelve a cerrar.",
+        "question1": "13. Segundos para cruzar"
+    },
+    "ventanas": {
+        "Name": "Ventanas",
+        "introduction": "Importante: En este campo se hace referencia a la altura a la que se encuentran en mecanismo de apertura de las ventanas de su hogar. Esta medida se toma desde el suelo hasta el pomo, manivela ohendidura que se use para abrir y cerrar la ventana.",
+        "advisory": "Indique en centímetros la distancia vertical entre el suelo y el elemento de apertura de la ventana, es decir, la altura a la que se encuentra.",
+        "question": "14. Altura de la manilla",
+        "image": "Click aquí para ver la imagen"
+    },
+    "final": {
+        "h2": "Hecho",
+        "introduction": "Muchas gracias por completar el formulario, para ver el resultado haga click en el botón Calcular que aparece más abajo.",
+        "advisory": "En caso de que quiera revisar o cambiar algunas de sus respuestas, siempre puede volver a las secciones anteriores pulsando los botones de navegación"
+    }
+}
